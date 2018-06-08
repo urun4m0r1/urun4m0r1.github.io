@@ -1,0 +1,59 @@
+# Site
+title:              Rekorn Sounds
+bio:                'Local anisong DJ in Japan'
+description:        "DJing, Producing, VJing, and Programming"
+locale:             ko_KR
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://urun4m0r1.github.io" # the base hostname & protocol for your site
+
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+    layout: post
+    author: rekorn
+
+# Jekyll
+permalink:          /blog/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+# Comments
+disqus_shortname:   rekorn
+
+# Social
+analytics-id:       "urun4m0r1"
+twitter:            urun4m0r1
+facebook:           urun4m0r1
+instagram:          urun4m0r1
+github:             urun4m0r1
+
+# personal
+location:           Tsukuba, Ibaraki, Japan
+phone:              +81-90-3400-7404
+email:              urun4m0r1@gmail.com
+
+# Gems
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]

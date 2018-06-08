@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+  {% include head.html %}
+</head>
+
+<body class="is-loading">
+
+  <!-- Wrapper -->
+  <div id="wrapper" class="fade-in">
+
+    <!-- Header -->
+    <header id="header">
+      <a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+
+      {% include nav.html %}
+
+      <ul class="icons">
+        <li>
+          <a href="https://neodymium-pudding.bandcamp.com/" class="icon fa-home" rel="nofollow">
+            <span class="label">Bandcamp</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://soundcloud.com/urun4m0r1" class="icon fa-soundcloud" rel="nofollow">
+            <span class="label">Soundcloud</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.mixcloud.com/urun4m0r1" class="icon fa-mixcloud" rel="nofollow">
+            <span class="label">Mixcloud</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+      <section class="post">
+        <header class="major">
+          <span class="date">{{page.date | date_to_string}}</span>
+          <h1><a href="">{{page.title}}</a></h1>
+          <p>{{page.excerpt}}</p>
+        </header>
+        <div class="image main">
+          <img src="{{page.image}}" alt="">
+        </div>
+        <p>{{content}}</p>
+      </section>
+
+      <div class="comments-wrapper">
+        <div id="disqus_thread"></div>
+        <script>
+          /**
+           *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+           *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+           */
+
+          var disqus_config = function () {
+            this.page.url = '{{ site.url }}{{ page.url }}'; /*Replace PAGE_URL with your page's canonical URL variable*/
+            this.page.identifier = '{{ page.id }}'; /*Replace PAGE_IDENTIFIER with your page's unique identifier variable*/
+          };
+
+          var disqus_shortname = '{{ site.disqus_shortname }}';
+
+          (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document,
+              s = d.createElement('script');
+
+            s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+      <!-- /.comments-wrapper -->
+
+      <!-- Post -->
+      <section class="posts">
+        {% for post in site.posts %} {% assign mod3 = forloop.index | modulo: 3 %}
+        <article>
+          <header>
+            <!--<span class="date">{{ post.date | date_to_string }}</span>-->
+            <h2>
+              <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </h2>
+          </header>
+          <!--<a hxref="{{ post.url | absolute_url }}" class="image fit">
+              <img src="{{ post.image | absolute_url }}" alt="" />
+            </a>-->
+          <p>{{ post.excerpt }}
+          </p>
+          <!--<ul class="actions">
+              <li>
+                <a href="{{ post.url | absolute_url }}" class="button">See more</a>
+              </li>
+            </ul>-->
+        </article>
+        <!--{% if mod3 == 0 %}
+          <article>
+            <header>
+              <h2>
+                <a href="#">Sponsored</a>
+              </h2>
+            </header>
+
+          </article>
+          {% endif %}-->
+        {% endfor %}
+
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <ul class="actions">
+          <li>
+            <a href="{{ "/" | absolute_url }}" class="button">About</a>
+          </li>
+          <li>
+            <a href="{{ "/works/" | absolute_url }}" class="button">Works</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Footer -->
+    {% include foot.html %}
+
+  </div>
+
+  <!-- Scripts -->
+  {% include scripts-main.html %} {% include tracking.html %}
+
+  <script id="dsq-count-scr" src="//{{ site.disqus_shortname }}.disqus.com/count.js" async></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+<ul class="links">
+  <li class="{% if page.url == "/" %} active {% endif %}"><a href="{{ "/" | absolute_url }}">About</a></li>
+  <li class="{% if page.url contains '/works/' %} active {% endif %}"><a href="{{ "/works/" | absolute_url }}">Works</a></li>
+  <li class="{% if page.url contains '/blog/' %} active {% endif %}"><a href="{{ "/blog/" | absolute_url }}">Anisong DJ Guide</a></li>
+</ul>
