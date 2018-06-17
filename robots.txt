@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://urun4m0r1.github.io/sitemap.xml
