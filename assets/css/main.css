@@ -20,7 +20,7 @@
 		vertical-align: baseline;
 	}
 
-	img {
+	img, iframe {
 		max-width: 100%;
 		height: auto;
 	}
