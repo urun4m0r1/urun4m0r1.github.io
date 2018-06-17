@@ -20,7 +20,7 @@
 		vertical-align: baseline;
 	}
 
-	img, iframe {
+	img {
 		max-width: 100%;
 		height: auto;
 	}
@@ -1850,7 +1850,7 @@
 	}
 
 	hr {
-		border-bottom-color: #eeeeee;
+		border-bottom-color: #dddddd;
 	}
 
 /* Box */
