@@ -1841,12 +1841,12 @@
 	}
 
 	blockquote {
-		border-left-color: #eeeeee;
+		border-left-color: #dddddd;
 	}
 
 	code {
 		background: rgba(220, 220, 220, 0.25);
-		border-color: #eeeeee;
+		border-color: #dddddd;
 	}
 
 	hr {
@@ -1874,7 +1874,7 @@
 		}
 
 	.box {
-		border-color: #eeeeee;
+		border-color: #dddddd;
 	}
 
 /* Button */
@@ -2335,7 +2335,7 @@
 	input[type="email"],
 	select,
 	textarea {
-		border-color: #eeeeee;
+		border-color: #dddddd;
 	}
 
 		input[type="text"]:focus,
@@ -2352,7 +2352,7 @@
 	}
 
 	.select-wrapper:before {
-		color: #eeeeee;
+		color: #dddddd;
 	}
 
 	input[type="checkbox"] + label,
@@ -2362,7 +2362,7 @@
 
 		input[type="checkbox"] + label:before,
 		input[type="radio"] + label:before {
-			border-color: #eeeeee;
+			border-color: #dddddd;
 		}
 
 	input[type="checkbox"]:checked + label:before,
@@ -2697,7 +2697,7 @@
 		}
 
 	ul.divided li {
-		border-top-color: #eeeeee;
+		border-top-color: #dddddd;
 	}
 
 	ul.icons li a.icon:hover:before {
@@ -2705,7 +2705,7 @@
 	}
 
 	ul.icons.alt li .icon:before {
-		box-shadow: inset 0 0 0 2px #eeeeee;
+		box-shadow: inset 0 0 0 2px #dddddd;
 	}
 
 	ul.icons.alt li a.icon:hover:before {
@@ -2808,7 +2808,7 @@
 		}
 
 	header.major .date:before, header.major .date:after {
-		border-top-color: #eeeeee;
+		border-top-color: #dddddd;
 	}
 
 /* Table */
@@ -2887,7 +2887,7 @@
 			}
 
 	table tbody tr {
-		border-color: #eeeeee;
+		border-color: #dddddd;
 	}
 
 		table tbody tr:nth-child(2n + 1) {
@@ -2899,15 +2899,15 @@
 	}
 
 	table thead {
-		border-bottom-color: #eeeeee;
+		border-bottom-color: #dddddd;
 	}
 
 	table tfoot {
-		border-top-color: #eeeeee;
+		border-top-color: #dddddd;
 	}
 
 	table.alt tbody tr td {
-		border-color: #eeeeee;
+		border-color: #dddddd;
 	}
 
 /* Pagination */
@@ -2992,7 +2992,7 @@
 		}
 
 	.pagination a, .pagination span {
-		border-color: #eeeeee;
+		border-color: #dddddd;
 	}
 
 	.pagination a {
@@ -3010,11 +3010,11 @@
 			}
 
 		.pagination a.active {
-			background-color: #eeeeee;
+			background-color: #dddddd;
 		}
 
 	.pagination span {
-		color: #eeeeee;
+		color: #dddddd;
 	}
 
 /* Wrapper */
@@ -3580,7 +3580,7 @@
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
+			border-top: solid 2px #dddddd;
 			margin: 0;
 		}
 
@@ -3676,7 +3676,7 @@
 			}
 
 			#main > .posts > article {
-				border-color: #eeeeee;
+				border-color: #dddddd;
 				border-left-width: 2px;
 				border-style: solid;
 				border-top-width: 2px;
@@ -4388,7 +4388,7 @@
 		}
 
 			#navPanel .links li {
-				border-top: solid 2px #eeeeee;
+				border-top: solid 2px #dddddd;
 			}
 
 				#navPanel .links li a {
