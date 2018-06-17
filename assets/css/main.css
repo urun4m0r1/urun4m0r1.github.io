@@ -20,6 +20,11 @@
 		vertical-align: baseline;
 	}
 
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -2423,8 +2428,6 @@
 
 		.image img {
 			display: block;
-			max-width: 100%;
-			height: auto;
 		}
 
 		.image.left, .image.right {
