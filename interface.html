@@ -1,0 +1,1666 @@
+---
+layout: page
+title: Rekorn Sounds
+description: Having a massive list of every element of a theme is useful for quick referencing and ideas. Here is every component of Massively!
+sitemap:
+    priority: 0.7
+    lastmod: 2017-11-02
+    changefreq: weekly
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>ヒューマンインターフェース 韓国語.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+</head>
+<body>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
+<h1 id="%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">휴먼 인터페이스</h1>
+<!-- TOC -->
+<ul>
+<li><a href="#%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">휴먼 인터페이스</a>
+<ul>
+<li><a href="#1-%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%9E%80">1. 휴먼 인터페이스란</a>
+<ul>
+<li><a href="#%EA%B8%B0%EC%A1%B4%EC%9D%98-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%9E%80">기존의 「인터페이스」란</a></li>
+<li><a href="#%EC%99%9C-%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%9C%EA%B0%80">왜 휴먼 인터페이스가 필요한가</a>
+<ul>
+<li><a href="#%EC%9B%90%EC%9E%90%EB%A1%9C-%EC%82%AC%EA%B3%A0%EB%8A%94-%ED%9C%B4%EB%A8%BC-%EC%97%90%EB%9F%AC%EC%97%90-%EC%9D%98%ED%95%9C%EA%B2%83">원자로 사고는 <strong>휴먼 에러</strong>에 의한것</a></li>
+</ul>
+</li>
+<li><a href="#%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B0%80">어떻게 휴먼 인터페이스를 만드는가</a>
+<ul>
+<li><a href="#%EC%9D%B8%EA%B0%84%EC%9D%98-%EB%AA%A8%EB%8D%B8%EC%9D%84-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B1%B4-%EC%96%B4%EB%A0%B5%EB%8B%A4">인간의 모델을 만드는건 어렵다</a></li>
+</ul>
+</li>
+<li><a href="#%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EA%B8%B0%EC%B4%88%EC%A0%81-%ED%95%99%EB%AC%B8-%EC%B2%B4%EA%B3%84">휴먼 인터페이스의 기초적 학문 체계</a>
+<ul>
+<li><a href="#%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%8A%94-%EB%B3%B5%ED%95%A9-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98-%EC%A0%84%ED%98%95">휴먼 인터페이스는 <strong>복합 시스템</strong>의 전형</a></li>
+<li><a href="#%EB%B3%B5%ED%95%A9-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%A0%9C%EC%9E%91-%EA%B8%B0%EC%88%A0%EC%9E%90%EC%97%90%EA%B2%8C-%ED%95%84%EC%9A%94%ED%95%9C-%EC%86%8C%EC%96%91">복합 시스템 제작 기술자에게 필요한 소양</a></li>
+</ul>
+</li>
+<li><a href="#%EA%B3%BC%EA%B1%B0%EB%AC%B8-1">과거문 1</a></li>
+<li><a href="#%EA%B3%BC%ED%95%99-%EA%B8%B0%EC%88%A0%EC%82%AC%EC%97%90-%EC%9E%88%EC%96%B4-%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EB%B0%9C%EC%A0%84">과학 기술사에 있어 휴먼 인터페이스의 발전</a>
+<ul>
+<li><a href="#%EA%B8%B0%EA%B3%84%EC%99%80-%EC%9D%B8%EA%B0%84%EC%9D%98-%EA%B4%80%EA%B3%84-%EB%B3%80%ED%99%94">기계와 인간의 관계 변화</a></li>
+<li><a href="#%EC%9D%B8%EA%B0%84%EC%9D%98-%ED%8A%B9%EC%84%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EC%97%B0%EA%B5%AC%EC%9D%98-%EC%97%AD%EC%82%AC">인간의 특성에 관한 연구의 역사</a></li>
+</ul>
+</li>
+<li><a href="#%EA%B3%BC%EA%B1%B0%EB%AC%B8-2">과거문 2</a></li>
+</ul>
+</li>
+<li><a href="#21-%EA%B3%B5%ED%95%99-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98-%EC%9D%B8%EA%B0%84%EC%9D%98-%EB%AC%BC%EB%A6%AC%EC%A0%81-%ED%8A%B9%EC%84%B1">2.1. 공학 시스템의 인간의 물리적 특성</a>
+<ul>
+<li><a href="#%EC%8B%A0%EC%B2%B4-%EC%82%AC%EC%9D%B4%EC%A6%88-%EC%B8%A1%EC%A0%95-%EA%B3%BC%EA%B1%B0">신체 사이즈 측정 (과거)</a></li>
+<li><a href="#%EC%9D%B8%EC%B2%B4%EC%9D%98-%ED%98%95%EC%83%81%EA%B3%84%EC%B8%A1-%EA%B7%BC%EB%8C%80">인체의 형상계측 (근대)</a></li>
+<li><a href="#%ED%98%84%EB%8C%80%EC%9D%98-%EC%9A%B4%EB%8F%99%EA%B3%84%EC%B8%A1-%ED%98%84%EB%8C%80">현대의 운동계측 (현대)</a></li>
+<li><a href="#%EC%8B%A0%EC%B2%B4%ED%98%95%ED%83%9C%EC%9D%98-%EB%AA%A8%EB%8D%B8">신체형태의 모델</a></li>
+<li><a href="#%EA%B3%BC%EA%B1%B0%EB%AC%B8-3">과거문 3</a></li>
+</ul>
+</li>
+<li><a href="#22-%EA%B3%B5%ED%95%99-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98-%EC%9D%B8%EA%B0%84%EC%9D%98-%EC%83%9D%EB%A6%AC%EC%A0%81-%ED%8A%B9%EC%84%B1">2.2. 공학 시스템의 인간의 생리적 특성</a>
+<ul>
+<li><a href="#%EC%83%9D%EB%A6%AC%EC%A7%80%ED%91%9C">생리지표</a>
+<ul>
+<li><a href="#%EC%8B%AC%EC%A0%84%EB%8F%84-ecg">심전도 (ECG)</a></li>
+<li><a href="#%EA%B7%BC%EC%A0%84%EB%8F%84-%E7%AD%8B%E9%9B%BB%E5%9B%B3-emg">근전도 (筋電図; EMG)</a></li>
+<li><a href="#%EC%95%88%EC%A7%84%EB%8F%84">안진도</a></li>
+<li><a href="#%EB%87%8C%ED%8C%8C-eeg">뇌파 (EEG)</a></li>
+<li><a href="#%EC%9C%A0%EB%B0%9C%EC%A0%84%EC%9C%84-%E8%AA%98%E7%99%BA%E9%9B%BB%E4%BD%8D-evoked-potential">유발전위 (誘発電位) (evoked potential)</a></li>
+<li><a href="#%EB%91%90%ED%94%BC-%EC%A4%80%EB%B9%84-%EC%A0%84%EC%9C%84">두피 준비 전위</a></li>
+<li><a href="#%EC%95%88%EB%A9%B4-%ED%94%BC%EB%B6%80-%EC%98%A8%EB%8F%84">안면 피부 온도</a></li>
+<li><a href="#%EB%87%8C-%EC%84%BC%EC%84%9C">뇌 센서</a></li>
+</ul>
+</li>
+<li><a href="#%EA%B3%BC%EA%B1%B0%EB%AC%B8-4">과거문 4</a></li>
+</ul>
+</li>
+<li><a href="#23-%EC%9D%B8%EA%B0%84%EC%9D%98-%EA%B0%90%EA%B0%81%EC%9D%98-%EC%A2%85%EB%A5%98%EC%99%80-%ED%8A%B9%EC%84%B1">2.3. 인간의 감각의 종류와 특성</a>
+<ul>
+<li><a href="#%EC%8B%9C%EA%B0%81%EC%9D%98-%ED%8A%B9%EC%84%B1">시각의 특성</a>
+<ul>
+<li><a href="#%EB%88%88%EC%9D%98-%EC%88%9C%EC%9D%91">눈의 순응</a></li>
+<li><a href="#%EC%8B%9C%EC%95%BC">시야</a></li>
+<li><a href="#%E5%A5%A5%E8%A1%8C%E7%9F%A5%E8%A6%9A-%EA%B1%B0%EB%A6%AC%EA%B0%90%EA%B0%81">奥行知覚 (거리감각)</a></li>
+</ul>
+</li>
+<li><a href="#%EC%B2%AD%EA%B0%81%EC%9D%98-%ED%8A%B9%EC%84%B1">청각의 특성</a>
+<ul>
+<li><a href="#%EC%B2%AD%EA%B0%90%EA%B0%90%EB%8F%84">청감감도</a></li>
+<li><a href="#%EC%B2%AD%EA%B0%81%EC%97%90-%EC%9D%98%ED%95%9C-%E5%A5%A5%E8%A1%8C%E7%9F%A5%E8%A6%9A-%EA%B1%B0%EB%A6%AC%EA%B0%90%EA%B0%81">청각에 의한 奥行知覚 (거리감각)</a></li>
+</ul>
+</li>
+<li><a href="#%EA%B3%BC%EA%B1%B0%EB%AC%B8-5">과거문 5</a></li>
+</ul>
+</li>
+<li><a href="#24-%EC%9D%B8%EA%B0%84%EC%9D%98-%EC%8B%AC%EB%A6%AC%EC%A0%81-%ED%8A%B9%EC%84%B1%EC%9D%98-%E6%9E%A0%E7%B5%84%E3%81%BF">2.4. 인간의 심리적 특성의 枠組み</a>
+<ul>
+<li><a href="#%EC%9D%B8%EC%A7%80-%EB%82%B4%EC%9A%A9-%EC%98%81%EC%97%AD">인지 내용 영역</a></li>
+<li><a href="#%EC%9D%B8%EC%A7%80-%EA%B3%BC%EB%8F%84-%EC%98%81%EC%97%AD">인지 과도 영역</a></li>
+<li><a href="#%EC%9D%B8%EC%A7%80-%EB%B0%A9%EB%9E%B5-%EC%98%81%EC%97%AD">인지 방략 영역</a></li>
+<li><a href="#%EA%B0%90%EC%84%B1">감성</a></li>
+<li><a href="#sd%EB%B2%95%EC%9D%98-%EC%98%88%EC%8B%9C">SD법의 예시</a></li>
+<li><a href="#%EC%8B%AC%EB%A6%AC%EC%A0%81-%ED%8A%B9%EC%84%B1%EC%97%90-%EB%94%B0%EB%A5%B8-%EC%9D%B8%EA%B0%84%EC%9D%98-%EB%AA%A8%EB%8D%B8">심리적 특성에 따른 인간의 모델</a>
+<ul>
+<li><a href="#%EB%AA%A8%EB%8D%B8-%ED%9C%B4%EB%A8%BC-%ED%94%84%EB%A1%9C%EC%84%B8%EC%84%9C%EC%9D%98-%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%8B%9C%EA%B0%84">모델 휴먼 프로세서의 사이클 시간</a></li>
+<li><a href="#%EC%9E%91%EC%97%85%EC%8B%9C%EA%B0%84-%EC%B6%94%EC%A0%95%EC%9D%98-%EC%98%88%EC%8B%9C">작업시간 추정의 예시</a></li>
+</ul>
+</li>
+<li><a href="#%EA%B3%BC%EA%B1%B0%EB%AC%B8-6">과거문 6</a></li>
+</ul>
+</li>
+<li><a href="#25-%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EC%82%AC%ED%9A%8C%EC%A0%81-%ED%8A%B9%EC%84%B1">2.5. 휴먼 인터페이스의 사회적 특성</a>
+<ul>
+<li><a href="#%EC%9D%B8%EA%B0%84%EC%99%80-%EC%9D%B8%EA%B0%84%EC%9D%98-%EA%B4%80%EA%B3%84%EB%A5%BC-%ED%98%95%EC%84%B1%ED%95%98%EB%8A%94-%EA%B5%AC%EC%A1%B0">인간와 인간의 관계를 형성하는 구조</a></li>
+<li><a href="#%EC%82%AC%ED%9A%8C%EC%A0%81-%ED%8A%B9%EC%85%A9%EC%9D%98-%EC%A1%B0%EC%82%AC">사회적 특셩의 조사</a>
+<ul>
+<li><a href="#%EC%96%91%EC%A0%81%EC%A1%B0%EC%82%AC">양적조사</a></li>
+<li><a href="#%EC%A7%88%EC%A0%81%EC%A1%B0%EC%82%AC">질적조사</a>
+<ul>
+<li><a href="#%EB%91%90%EA%B0%80%EC%A7%80-%EC%A7%88%EC%A0%81%EC%A1%B0%EC%82%AC">두가지 질적조사</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%EA%B3%BC%EA%B1%B0%EB%AC%B8-7">과거문 7</a></li>
+</ul>
+</li>
+<li><a href="#31-%EC%9D%B8%ED%84%B0%EB%9F%AD%ED%8B%B0%EB%B8%8C%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98-%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0">3.1. 인터럭티브시스템의 기본구조</a>
+<ul>
+<li><a href="#%EC%9E%85%EB%A0%A5%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">입력인터페이스</a>
+<ul>
+<li><a href="#%EC%9E%85%EB%A0%A5%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EC%B2%B4%EA%B3%84">입력인터페이스의 체계</a></li>
+</ul>
+</li>
+<li><a href="#%EC%B6%9C%EB%A0%A5%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">출력인터페이스</a>
+<ul>
+<li><a href="#%EC%B6%9C%EB%A0%A5-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EC%B2%B4%EA%B3%84">출력 인터페이스의 체계</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#32-%EC%8B%9C%EA%B0%81-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4">3.2. 시각 디스플레이</a>
+<ul>
+<li><a href="#2%EC%95%88%EC%8B%9D">2안식</a>
+<ul>
+<li><a href="#%EC%95%88%EA%B2%BD%EC%9D%84-%EC%9D%B4%EC%9A%A9">안경을 이용</a></li>
+<li><a href="#hmd-%EB%91%90%EB%B6%80%ED%83%91%EC%A0%9C%EC%8B%9D-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4">HMD (두부탑제식 디스플레이)</a></li>
+<li><a href="#%E8%A3%B8%E7%9C%BC%EC%9E%85%EC%B2%B4%EC%8B%9C">裸眼입체시</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BD%93%E7%A9%8D%E8%B5%B0%E6%9F%BB%E5%9E%8B-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4">体積走査型 디스플레이</a></li>
+<li><a href="#%EB%AA%B0%EC%9E%85%ED%98%95-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4">몰입형 디스플레이</a>
+<ul>
+<li><a href="#%EB%8B%A4%EB%A9%B4%EC%B2%B4%ED%98%95">다면체형</a></li>
+<li><a href="#%EA%B3%A1%EB%A9%B4-%EC%8A%A4%ED%81%AC%EB%A6%B0">곡면 스크린</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#33-%EC%B2%B4%EC%84%B1%EA%B0%90%EA%B0%81%EC%9D%84-%EC%A0%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4">3.3. 체성감각을 제시하는 디스플레이</a>
+<ul>
+<li><a href="#%ED%94%BC%EB%B6%80%EA%B0%90%EA%B0%81%EC%A0%91%EC%95%95%EA%B0%90-%EC%9D%98-%EC%A0%9C%EC%8B%9C%EB%B0%A9%EB%B2%95">피부감각(접압감) 의 제시방법</a></li>
+<li><a href="#%EC%8B%AC%EB%B6%80%EA%B0%90%EA%B0%81%EC%9D%98-%EC%A0%9C%EC%8B%9C%EB%B0%A9%EB%B2%95">심부감각의 제시방법</a>
+<ul>
+<li><a href="#%EC%9E%A5%EC%B0%A9%ED%98%95-%E3%82%A8%E3%82%B0%E3%82%BE%E3%82%B9%E3%82%B1%E3%83%AB%E3%83%88%E3%83%B3">장착형 (エグゾスケルトン)</a></li>
+<li><a href="#%ED%8C%8C%EC%A7%80%ED%98%95">파지형</a></li>
+<li><a href="#%EB%8C%80%EC%83%81%ED%98%95">대상형</a></li>
+</ul>
+</li>
+<li><a href="#%EC%9C%B5%ED%95%A9%EA%B0%90%EA%B0%81%EC%9D%98-%EC%A0%9C%EC%8B%9C%EB%B0%A9%EB%B2%95">융합감각의 제시방법</a></li>
+<li><a href="#%EA%B3%BC%EA%B1%B0%EB%AC%B8-8">과거문 8</a></li>
+</ul>
+</li>
+<li><a href="#4-%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%ED%8F%89%EA%B0%80%EB%B0%A9%EB%B2%95">4. 휴먼 인터페이스의 평가방법</a>
+<ul>
+<li><a href="#%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4%ED%8F%89%EA%B0%80">퍼포먼스평가</a></li>
+<li><a href="#%EC%A3%BC%EA%B4%80%ED%8F%89%EA%B0%80">주관평가</a></li>
+<li><a href="#%EC%83%9D%EB%A6%AC%EC%A7%80%ED%91%9C%EC%97%90-%EC%9D%98%ED%95%9C-%ED%8F%89%EA%B0%80">생리지표에 의한 평가</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h2 id="1-%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%9E%80">1. 휴먼 인터페이스란</h2>
+<p>인간과 기계 사이의 상호작용을 더욱 쉽게 하기 위한 시스템. <a href="#%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">↑</a></p>
+<hr>
+<h3 id="%EA%B8%B0%EC%A1%B4%EC%9D%98-%E3%80%8C%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%E3%80%8D%EB%9E%80">기존의 「인터페이스」란</h3>
+<p>기계와 인간의 접합부 (기계공학, 전자공학), 물질의 개면 (화학)</p>
+<blockquote>
+<p><strong>휴먼 인터페이스란 인간과 기계의 접합부.</strong></p>
+</blockquote>
+<p>(최근 휴면 인터페이스를 단순히 인터페이스라고 부르는 경우가 많다.)</p>
+<hr>
+<h3 id="%EC%99%9C-%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%9C%EA%B0%80">왜 휴먼 인터페이스가 필요한가</h3>
+<p>인간이 쓰는 기계의 정보화가 진행되면서, 기능이 복잡해지며 쓰기 어렵게 되었다.</p>
+<ul>
+<li>
+<p>가전제품: VTR (예약 녹화장치), 컴퓨터 (일본어 입력기)</p>
+</li>
+<li>
+<p>대규모 플랜트: 원자력, 화학공장 (시스템 자체가 너무 복잡해져서 알기 어려움)</p>
+</li>
+</ul>
+<hr>
+<h4 id="%EC%9B%90%EC%9E%90%EB%A1%9C-%EC%82%AC%EA%B3%A0%EB%8A%94-%ED%9C%B4%EB%A8%BC-%EC%97%90%EB%9F%AC%EC%97%90-%EC%9D%98%ED%95%9C%EA%B2%83">원자로 사고는 <strong>휴먼 에러</strong>에 의한것</h4>
+<ul>
+<li>
+<p><a href="https://ko.wikipedia.org/wiki/%EC%8A%A4%EB%A6%AC%EB%A7%88%EC%9D%BC_%EC%84%AC_%EC%9B%90%EC%9E%90%EB%A0%A5_%EB%B0%9C%EC%A0%84%EC%86%8C_%EC%82%AC%EA%B3%A0">스리마일 섬 원자력 발전소 사고</a></p>
+<ul>
+<li>수위기계 오작동 &gt; 원료 주입 정지 &gt; 멜트다운 (압력계를 봤으면 오작동을 막을 수 있었다.)</li>
+</ul>
+</li>
+<li>
+<p><a href="https://ko.wikipedia.org/wiki/%EC%B2%B4%EB%A5%B4%EB%85%B8%EB%B9%8C_%EC%9B%90%EC%9E%90%EB%A0%A5_%EB%B0%9C%EC%A0%84%EC%86%8C_%EC%82%AC%EA%B3%A0">체르노빌 원자력 발전소 사고</a></p>
+<ul>
+<li>운전원의 절차 착오로 폭발. (원자로 자체는 정상)</li>
+</ul>
+</li>
+<li>
+<p><a href="https://ko.wikipedia.org/wiki/%EC%85%80%EB%9D%BC%ED%95%84%EB%93%9C_%EC%9B%90%EC%9E%90%EB%A0%A5_%EB%8B%A8%EC%A7%80">셀라필드 원자력 단지</a></p>
+<ul>
+<li>열어야 할 벨브를 착각해 방사선수 해양 노출.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://ko.wikipedia.org/wiki/%ED%9B%84%EC%BF%A0%EC%8B%9C%EB%A7%88_%EC%A0%9C1_%EC%9B%90%EC%9E%90%EB%A0%A5_%EB%B0%9C%EC%A0%84%EC%86%8C_%EC%82%AC%EA%B3%A0">후쿠시마 제1 원자력 발전소 사고</a></p>
+<ul>
+<li>발전소 정전 &gt; 전원이 없어도 비상용 냉각수는 작동 &gt; 그러한 사실을 모른 운전원이 수동으로 냉각수 공급 정지 &gt; 멜트다운 (냉각수 작동음을 이상현상으로 판단.)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B0%80">어떻게 휴먼 인터페이스를 만드는가</h3>
+<p><strong>인간의 모델</strong> (공학시스템에 접하는 인간의 행동을 기술한 것) 을 기초로 한 시스템을 구축.</p>
+<h4 id="%EC%9D%B8%EA%B0%84%EC%9D%98-%EB%AA%A8%EB%8D%B8%EC%9D%84-%EB%A7%8C%EB%93%9C%EB%8A%94%EA%B1%B4-%EC%96%B4%EB%A0%B5%EB%8B%A4">인간의 모델을 만드는건 어렵다</h4>
+<ul>
+<li>
+<p>물건의 학문 vs 사람의 학문</p>
+<ul>
+<li>보통의 과학기술은 물건의 모델을 만드는 학문. 또한, 그동안 인간의 연구는 문과의 영역이였다. 그러나 인간과 공학시스템이 접하는 상황에 있어 휴먼 인터페이스를 필요로 하게 되었다. (기존의 학문과는 다른 분야.)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EA%B8%B0%EC%B4%88%EC%A0%81-%ED%95%99%EB%AC%B8-%EC%B2%B4%EA%B3%84">휴먼 인터페이스의 기초적 학문 체계</h3>
+<ol>
+<li>
+<p>총론: 역사적 배경 (인간과 기계의 관계 변화)</p>
+</li>
+<li>
+<p>공학 시스템에 있어서의 인간특성: 4가지 관점에서 인간을 모델화</p>
+</li>
+<li>
+<p>인터랙션을 실현하는 시스템기술: 입력 시스템과 출력 시스템</p>
+</li>
+<li>
+<p>휴먼 인터페이스의 평가방법: 휴먼 인터페이스의 좋고 나쁨을 어떻게 판단하는가.</p>
+</li>
+</ol>
+<ul>
+<li>
+<p><a href="https://kdb.tsukuba.ac.jp/syllabi/2018/FG24381/jpn/0/">도달 목표</a></p>
+</li>
+<li>
+<p><a href="https://vrsj.org/publications/virtualreality/">참고서</a></p>
+</li>
+</ul>
+<h4 id="%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%8A%94-%EB%B3%B5%ED%95%A9-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98-%EC%A0%84%ED%98%95">휴먼 인터페이스는 <strong>복합 시스템</strong>의 전형</h4>
+<p>복합 시스템이란 이질적인 여러 요소를 합쳐 기능하는 시스템. 인간과 기계는 매우 이질적. (물건의 학문 vs 사람의 학문) 사람이 무엇과 인터페이스 하냐에 따라 시스템의 실현방법이 다르다.</p>
+<h4 id="%EB%B3%B5%ED%95%A9-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%A0%9C%EC%9E%91-%EA%B8%B0%EC%88%A0%EC%9E%90%EC%97%90%EA%B2%8C-%ED%95%84%EC%9A%94%ED%95%9C-%EC%86%8C%EC%96%91">복합 시스템 제작 기술자에게 필요한 소양</h4>
+<ul>
+<li>
+<p>T형 인간</p>
+<ul>
+<li>
+<p>세로: 어떤 분야의 전문지식</p>
+</li>
+<li>
+<p>가로: 디른 전문분야의 시람과 같이 일할 때 필요판 전문 용어</p>
+</li>
+</ul>
+</li>
+<li>
+<p>π형 인간</p>
+<ul>
+<li>전문분야를 두개 알고있다. 높은 분야횡단력 (공학과 의학/예술 등의 접목)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="%EA%B3%BC%EA%B1%B0%EB%AC%B8-1">과거문 1</h3>
+<ol>
+<li>
+<p>휴먼 인터페이스라는 학문 분야가 다른 공학과 가장 다른 점을 기술하라.</p>
+</li>
+<li>
+<p>원자력 발전소 사고를 막기 위해 휴먼 인터페이스라는 학문이 해야할 일은 무엇인가.</p>
+</li>
+</ol>
+<hr>
+<h3 id="%EA%B3%BC%ED%95%99-%EA%B8%B0%EC%88%A0%EC%82%AC%EC%97%90-%EC%9E%88%EC%96%B4-%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EB%B0%9C%EC%A0%84">과학 기술사에 있어 휴먼 인터페이스의 발전</h3>
+<h4 id="%EA%B8%B0%EA%B3%84%EC%99%80-%EC%9D%B8%EA%B0%84%EC%9D%98-%EA%B4%80%EA%B3%84-%EB%B3%80%ED%99%94">기계와 인간의 관계 변화</h4>
+<ul>
+<li>
+<p>산업혁명 이전: 도구의 시대, 기계의 행위와 인간의 행위의 일대일 대응 (지레, 농기구)</p>
+</li>
+<li>
+<p>산헙혁명 이후 (18~20세기): 에너지 변환형의 기계가 등장. 인간은 기계에 가하는 에너지량의 조절 (자동차)</p>
+</li>
+<li>
+<p>현대 이후: 정보기계의 등장. 정보의 입출력이 인간의 일. 변화를 가하고 싶은 대상이 눈에 보이지 않게됨.</p>
+</li>
+</ul>
+<h4 id="%EC%9D%B8%EA%B0%84%EC%9D%98-%ED%8A%B9%EC%84%B1%EC%97%90-%EA%B4%80%ED%95%9C-%EC%97%B0%EA%B5%AC%EC%9D%98-%EC%97%AD%EC%82%AC">인간의 특성에 관한 연구의 역사</h4>
+<ul>
+<li>
+<p>19세기</p>
+<ul>
+<li>
+<p>실험심리학, 정신물리학 &gt; 감각 기억에 관한 실험적 연구</p>
+</li>
+<li>
+<p>감각척도: 자극에 대한 감각을 정량화</p>
+</li>
+<li>
+<p><a href="https://ko.wikipedia.org/wiki/%EB%B2%A0%EB%B2%84-%ED%8E%98%ED%9E%88%EB%84%88%EC%9D%98_%EB%B2%95%EC%B9%99">베버-페히너의 법칙</a>: 감각량은 자극강도의 대수에 비례.</p>
+</li>
+<li>
+<p><a href="https://zetawiki.com/wiki/%EC%8A%A4%ED%8B%B0%EB%B8%90%EC%8A%A4%EC%9D%98_%EB%A9%B1%EB%B2%95%EC%B9%99">스티븐스의 멱법칙</a></p>
+</li>
+<li>
+<p>$$ ψ(I)=kI^a $$</p>
+</li>
+</ul>
+</li>
+<li>
+<p>20세기 초</p>
+<ul>
+<li>
+<p>인간공학의 탄생: 초기의 인간공학</p>
+</li>
+<li>
+<p><a href="https://ko.wikipedia.org/wiki/%EA%B3%BC%ED%95%99%EC%A0%81_%EA%B4%80%EB%A6%AC%EB%B2%95">테일러즘</a>: 노동에 있어 작업연구를 행함. 스탑워치로 작업시간을 측정, 손의 움직임을 최소화해, 생산성의 향상을 지향. (자판 배치 등)</p>
+<ul>
+<li>현재 일반적 키보드는 QWERTY, 일부로 동선을 늘려둠 (당시의 키보드는 내구성이 좋지 못함)</li>
+</ul>
+</li>
+<li>
+<p>인간공학은 <strong>유럽</strong>에서 다른 진화를 낳았다.</p>
+<ul>
+<li>더 좋은 노동환경을 위해 인간의 신체 특성에 맞춘 공구의 설계, 작업순서의 디자인 연구 등.</li>
+</ul>
+</li>
+<li>
+<p>반면 <strong>미국</strong>에서는 군에 의해</p>
+<ul>
+<li>사고방지를 목적으로 기품조작에 실수가 없도록 하기 위해 計器와 조작판의 설계를 연구.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>20세기 중반 (1948~1970)</p>
+<ul>
+<li><a href="https://ko.wikipedia.org/wiki/%EB%85%B8%EB%B2%84%ED%8A%B8_%EC%9C%84%EB%84%88">노버트 위너</a>: 사이버네틱스 (인공두뇌학) 의 제창. 생물과 기계에 공통인 제어이론. 인간이 제어계에 들어가 低次의 제어품이 된다.</li>
+</ul>
+</li>
+<li>
+<p>20세기 후반 (1980s)</p>
+<ul>
+<li>
+<p>인지공학의 탄생, 인지심리학의 수법을 휴먼 인터페이스의 설계의 평가에 이용.</p>
+</li>
+<li>
+<p><a href="https://ko.wikipedia.org/wiki/%EB%8F%84%EB%84%90%EB%93%9C_%EB%85%B8%EB%A8%BC">도널드 노먼</a>: 인간의 일상에서 사용하는것이 인간의 심리특성에 맞지 않는것을 지적. &quot;Psyology of every life&quot;</p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Jens_Rasmussen_(human_factors_expert)">젠스 라스무센</a>: 프론트사고가 왜 일어나는가를 인간의 심리특성에 근본해 해석</p>
+</li>
+</ul>
+</li>
+<li>
+<p>컴퓨터 등장 이후의 휴먼인터페이스</p>
+<ul>
+<li>
+<p><a href="https://ko.wikipedia.org/wiki/%EB%B2%84%EB%8B%88%EB%B0%94_%EB%B6%80%EC%8B%9C">버니바 부시</a> (1945): Memex (<strong>Mem</strong>ory <strong>Ex</strong>tender) 최초의 휴먼 인터페이스 묘사</p>
+</li>
+<li>
+<p><a href="https://ko.wikipedia.org/wiki/%EB%8D%94%EA%B8%80%EB%9F%AC%EC%8A%A4_%EC%97%A5%EA%B2%84%EB%B0%94%ED%8A%B8">더글라스 엥겔바트</a> (1968): NLS (o<strong>N</strong>-<strong>L</strong>ine <strong>S</strong>ystem) 의 데모. GUI의 제안. 최초의 마우스.</p>
+</li>
+<li>
+<p><a href="https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B0%98_%EC%84%9C%EB%8D%9C%EB%9E%9C%EB%93%9C">이반 서덜랜드</a> (1963) CG의 아버지. 스케치패드 라이트펜을 이용해 화면에 직접 그림을 그림. 최초의 HMD (1968) 제안. (거울 이용, VR의 원형)</p>
+</li>
+<li>
+<p><a href="https://ko.wikipedia.org/wiki/%EC%95%A8%EB%9F%B0_%EC%BC%80%EC%9D%B4">앨런 케이</a> (1970): NLS의 데모를 보고 개인용 컴퓨터 「다이나북」 을 구상. (1973) 제록스의 팔로알토 연구소에서, 당시 구현 가능한 기술을 이용, 최초의 PC 「Alto」를 제작. (비트맵 디스플레이, 아이콘과 마우스의 현대적 GUI)</p>
+</li>
+<li>
+<p><a href="https://ko.wikipedia.org/wiki/MIT_%EB%AF%B8%EB%94%94%EC%96%B4_%EB%9E%A9">MIT 미디어 랩</a> (1984): 미디어룸. 음성과 제스쳐 지시. (Put That There)</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="%EA%B3%BC%EA%B1%B0%EB%AC%B8-2">과거문 2</h3>
+<ol>
+<li>
+<p>산업혁명 이전과 비교해, 현대의 기계와 인간의 관계중 가장 다른 점을, 예를 들어 그림과 같이 설명하라.</p>
+</li>
+<li>
+<p>컴퓨터와 인간의 인터페이스는, 태블릿으로 대표되는거같이 직시적인 조작이 가능하도록 설계되어왔다. 이것이 필요한 이유를, 사람과 기계의 관계의 역사와 연관지어 설명하라.</p>
+</li>
+<li>
+<p>HMD의 원리를 그림를 이용해 설명하고, 웨어러블 장치로서 이용할 경우의 이점에 대해 설명하라.</p>
+</li>
+</ol>
+<hr>
+<h2 id="21-%EA%B3%B5%ED%95%99-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98-%EC%9D%B8%EA%B0%84%EC%9D%98-%EB%AC%BC%EB%A6%AC%EC%A0%81-%ED%8A%B9%EC%84%B1">2.1. 공학 시스템의 인간의 물리적 특성</h2>
+<p>인체의 형상과 운동에 관해 <a href="#%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">↑</a></p>
+<hr>
+<h3 id="%EC%8B%A0%EC%B2%B4-%EC%82%AC%EC%9D%B4%EC%A6%88-%EC%B8%A1%EC%A0%95-%EA%B3%BC%EA%B1%B0">신체 사이즈 측정 (과거)</h3>
+<p>인체측정: 표준측정 (直立立位、直立座位) 에 있어서 각 부위의 길이 (寸法)</p>
+<p><img src="imgs/2018-04-26-10-41-17.png" alt="인체측정에 있어서의 표준자세"></p>
+<ul>
+<li>
+<p><a href="http://www.seedtech.co.kr/shop/item.php?it_id=1455198141">Martin식 인체측정법</a>: 인체 각 부위의 직선거리, 体表에 따른 길이, 이동 가능 각도 측정</p>
+<ul>
+<li>
+<p>각도기를 각 관절에 착용, 비디오를 촬영해 관절 위치를 계측</p>
+</li>
+<li>
+<p>제품설계에 사용: 의자, 책상, 옷, 자동차, 公共空間 (엘리베이터) 등</p>
+</li>
+<li>
+<p>기존의 인간공학에서 사용</p>
+</li>
+</ul>
+<p><img src="imgs/2018-04-26-10-43-20.png" alt="Martin식 인체측정법"></p>
+<p><img src="imgs/2018-04-26-10-41-53.png" alt="동작영역 거리"></p>
+</li>
+</ul>
+<hr>
+<h3 id="%EC%9D%B8%EC%B2%B4%EC%9D%98-%ED%98%95%EC%83%81%EA%B3%84%EC%B8%A1-%EA%B7%BC%EB%8C%80">인체의 형상계측 (근대)</h3>
+<p>Martin식 신체측정법은 점과 선을 계측, 신체에 관한 충분한 정보가 없다. &gt; 인체를 3차원 형상으로 계측할 필요가 있다.</p>
+<ul>
+<li><a href="https://www.osapublishing.org/ao/abstract.cfm?uri=ao-9-6-1467">Moire Topography식</a>: 의자를 통과해 빛을 体表에 투영하면, 몸의 등고선이 비쳐진다. 1970년부터 의학이나 의류 (被服ert) 분야에서 사용. 정밀도는 그렇게 높지 않다.</li>
+</ul>
+<p><img src="imgs/2018-04-26-10-52-24.png" alt="Moire Topography식"></p>
+<ul>
+<li>
+<p><a href="https://www.researchgate.net/figure/Active-stereo-example-of-a-structured-light-system-This-example-shows-a_fig6_226177485">액티브 스트레오법</a>: 광원과 빚센서의 조합으로 삼각측정을 한다.</p>
+<p><img src="imgs/2018-04-26-10-58-35.png" alt="삼각측정법"></p>
+<p><img src="imgs/2018-04-26-10-58-22.png" alt="액티브 스트레오법"></p>
+</li>
+</ul>
+<hr>
+<h3 id="%ED%98%84%EB%8C%80%EC%9D%98-%EC%9A%B4%EB%8F%99%EA%B3%84%EC%B8%A1-%ED%98%84%EB%8C%80">현대의 운동계측 (현대)</h3>
+<ul>
+<li>
+<p>기계식 위치센서: 링크 기구의 관절각도를 측정해 좌표변환에 의해 위치 자세를 알아낸다 (<a href="https://ko.wikipedia.org/wiki/%EA%B3%A0%EB%8B%88%EC%98%A4%EB%AF%B8%ED%84%B0">고니오 미터</a>)</p>
+<p><img src="imgs/2018-05-15-14-44-54.png" alt="기계식 위치센서"></p>
+<ul>
+<li>
+<p>장점: 샘플링 레이트, 정밀도가 높다</p>
+</li>
+<li>
+<p>단점: 탈착이 복잡하고, 링크가 몸을 구속한다.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>자기식 위치센서: 발산기에서 나온 자계에 의해 수신기의 코일에 유도전류가 흐른다</p>
+<p><img src="imgs/2018-05-15-14-49-47.png" alt="자기식 위치센서"></p>
+<ul>
+<li>
+<p>장점: 수신기가 소형</p>
+</li>
+<li>
+<p>단점: 자기 노이즈에 약함 (철 근방에서 오작동)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>광학식 위치센서: 몸에 착용한 마커를 복수의 카메라로 촬영해 삼각측량의 원리로 위치를 알아낸다</p>
+<p><img src="imgs/2018-05-15-14-50-31.png" alt="광학식 위치센서"></p>
+<ul>
+<li>
+<p>장점: 정밀도가 높고 샘플링이 빠르다</p>
+</li>
+<li>
+<p>단점: 마커가 카메라에 포착되지 않으면 계측 불가능 &gt; 다수의 카메라를 이용</p>
+</li>
+</ul>
+</li>
+<li>
+<p>가속도센서와 자이로스코프: 가속도를 2회 적분해 위치를 구한다. 자이로스코프로 각도를 구함.</p>
+<ul>
+<li>
+<p>장점: 장치가 작고 외부장치가 필요 없다.</p>
+</li>
+<li>
+<p>단점: 오차가 축적됨으로 정확한 측정이 불가능</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="%EC%8B%A0%EC%B2%B4%ED%98%95%ED%83%9C%EC%9D%98-%EB%AA%A8%EB%8D%B8">신체형태의 모델</h3>
+<p>계측으로 얻은 데이터는 体表점좌표의 집합. 이것을 기품의 설계에 이용 가능한 모델로 만든다.</p>
+<p><img src="imgs/2018-05-15-18-18-17.png" alt="쌍 3차 스프라인 함수"></p>
+<p>쌍 3차 스프라인 함수로 곡면을 기술한다. 이 모델을 기준으로 신체에 맞는 기품 혹은 의복을 만든다.</p>
+<p>관절의 움직이는 방법 (운동영역) 을 반영한 인체모델</p>
+<ul>
+<li>
+<p>항공기의 콕피트나 자동차의 운전석</p>
+</li>
+<li>
+<p>펜실베니아 대학의 Jack 프로그램이 시판중</p>
+<p><img src="imgs/2018-05-15-18-20-52.png" alt="Jack"></p>
+<ul>
+<li>
+<p>형태는 정밀히 표현할 수 없으나 유저의 형태에 맞춰 사이즈가 변한다.</p>
+</li>
+<li>
+<p>좋은 위치에서 작업이 가능한지 알 수 있다.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="%EA%B3%BC%EA%B1%B0%EB%AC%B8-3">과거문 3</h3>
+<ol>
+<li>
+<p>Martin식 인체측정법과 액티브스트레오법으로 얻어지는 데이터의 차이점에 대하여 기술하라</p>
+</li>
+<li>
+<p>액티브 스트레오법으로 얻어진 데이터를 제품제작에 응용하는 방법을, 예를 들어 설명하라</p>
+</li>
+<li>
+<p>광학식 위치 센서로 인체의 움직임을 계측하는 원리를 약도를 이용해 설명하라</p>
+</li>
+</ol>
+<hr>
+<h2 id="22-%EA%B3%B5%ED%95%99-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98-%EC%9D%B8%EA%B0%84%EC%9D%98-%EC%83%9D%EB%A6%AC%EC%A0%81-%ED%8A%B9%EC%84%B1">2.2. 공학 시스템의 인간의 생리적 특성</h2>
+<p>생리지표와 인간의 감각에 대해 <a href="#%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">↑</a></p>
+<hr>
+<h3 id="%EC%83%9D%EB%A6%AC%EC%A7%80%ED%91%9C">생리지표</h3>
+<p><img src="imgs/2018-05-15-18-34-30.png" alt="생리적 반응의 매커니즘"></p>
+<ul>
+<li>
+<p>인간의 내부상태를 측정. 눈에 보이지 않는 상태변화를 알 수 있다.</p>
+</li>
+<li>
+<p>스트레서에 의해 다양한 생리 반응이 일어나는데 그것을 센서로 측정하는것</p>
+</li>
+</ul>
+<h4 id="%EC%8B%AC%EC%A0%84%EB%8F%84-ecg">심전도 (ECG)</h4>
+<p><img src="imgs/2018-05-15-18-37-39.png" alt="심전도"></p>
+<ul>
+<li>
+<p>심장을 포함하는 위치에 전극을 붙여 전위차를 측정. <em>안정적</em>으로 측정 할 수 있어서  <strong>생체 전기신호중</strong> 가장 많이 사용됨.</p>
+</li>
+<li>
+<p>R-R 간격에 주목: 분산치가 스트레서와 관련. 분산이 적을수록 긴장 상태. 집중도 등 관측에 사용.</p>
+</li>
+</ul>
+<h4 id="%EA%B7%BC%EC%A0%84%EB%8F%84-%E7%AD%8B%E9%9B%BB%E5%9B%B3-emg">근전도 (筋電図; EMG)</h4>
+<p><img src="imgs/2018-05-15-18-43-14.png" alt="근전도"></p>
+<ul>
+<li>
+<p>착목하는 근육에 전극을 붙여 전위차를 측정</p>
+</li>
+<li>
+<p>근전도의 Envelope (포각선) 면적을 구한다. 근육의 활동이 활발할수록 면적이 크다.</p>
+</li>
+<li>
+<p>작업시의 육체적 부담을 정량적으로 알 수 있다.</p>
+</li>
+</ul>
+<h4 id="%EC%95%88%EC%A7%84%EB%8F%84">안진도</h4>
+<p><img src="imgs/2018-05-15-18-44-55.png" alt="안진도"></p>
+<ul>
+<li>
+<p>눈의 상하좌우에 전극을 붙인다</p>
+</li>
+<li>
+<p>안구의 망막은 각막에 비해 음전위를 띄고 있어 안구의 움직임에 따라 전위차가 생김</p>
+</li>
+<li>
+<p>안구운동은 휴먼 인터페이스에 있어 중요</p>
+</li>
+<li>
+<p>실제로는 비접촉으로 측정 가능한 화상/적외선을 사용</p>
+</li>
+</ul>
+<h4 id="%EB%87%8C%ED%8C%8C-eeg">뇌파 (EEG)</h4>
+<p><img src="imgs/2018-05-15-18-56-44.png" alt="뇌파"></p>
+<ul>
+<li>
+<p>뇌의 활동이 두피의 전위로서 나타난다.</p>
+</li>
+<li>
+<p>전극의 붚이는법이 정해져있다: 국제 10-20법: 21개의 전극</p>
+</li>
+<li>
+<p>주파수에 따라 분류가 가능하다.</p>
+<ul>
+<li>
+<p>α파: 8~12Hz 눈을 감으면 후두부에 나타난다. 낮은 각성도나 개안시에도 나타난다. 쾌적성의 척도</p>
+</li>
+<li>
+<p>β파: 12~25Hz 정신활동과 관련이 있다고 전해져있으나, 진폭이 작아 측정하기 어렵다.</p>
+</li>
+<li>
+<p>θ파: 4~7Hz 정신적 작업을 부담했을때 생긴다. 정중선위 나타나는 θ파는 집중도와 관련이 깊다.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>뇌파는 노이즈에 약하다</p>
+<ul>
+<li>안구의 움직임이나 표정근육의 움직임에 의한 두피의 전위변화마저 측정되어버림. α파에 의한 안정도 이외는 사용하기 어렵다.</li>
+</ul>
+</li>
+</ul>
+<h4 id="%EC%9C%A0%EB%B0%9C%EC%A0%84%EC%9C%84-%E8%AA%98%E7%99%BA%E9%9B%BB%E4%BD%8D-evoked-potential">유발전위 (誘発電位) (evoked potential)</h4>
+<ul>
+<li>
+<p>외부로부터의 자극에 대해 발생하는 두피의 전위 변화를 측정.</p>
+</li>
+<li>
+<p>변화가 매우 적기 떄문에 자극을 반복해 평균치를 얻음.</p>
+</li>
+<li>
+<p>뇌의 고도의 기능을 이용하는것은 事象関連電位 라고 불림</p>
+</li>
+</ul>
+<p><img src="imgs/2018-05-17-08-52-17.png" alt="P300"></p>
+<ul>
+<li>
+<p>P300: 자극 (트리거) 에 <em>흥미</em>가 나타날경우 300ms 전후로 변화가 발생</p>
+</li>
+<li>
+<p>BMI (Brain Machine Interface) 에 사용됨</p>
+</li>
+</ul>
+<h4 id="%EB%91%90%ED%94%BC-%EC%A4%80%EB%B9%84-%EC%A0%84%EC%9C%84">두피 준비 전위</h4>
+<ul>
+<li>
+<p>행동을 하기 <strong>직전에</strong> 두피의 전위가 변화함</p>
+</li>
+<li>
+<p>패턴을 분석하는것에 의해 그 사람이 무엇을 하고자 하는지 판별 가능.</p>
+</li>
+<li>
+<p>몸을 움직이지 않고 스위치를 누를 수 있음.</p>
+</li>
+</ul>
+<h4 id="%EC%95%88%EB%A9%B4-%ED%94%BC%EB%B6%80-%EC%98%A8%EB%8F%84">안면 피부 온도</h4>
+<p><img src="imgs/2018-05-17-09-00-00.png" alt="안면 피부 온도"></p>
+<ul>
+<li>
+<p>집중, 긴장하면 모세혈관이 수축해 안면 피부의 혈류양이 감소, 온도가 내려간다.</p>
+</li>
+<li>
+<p>피부온도가 サーモグラフィ (thermography) 로 <em>비접촉</em> 관측 가능</p>
+</li>
+</ul>
+<h4 id="%EB%87%8C-%EC%84%BC%EC%84%9C">뇌 센서</h4>
+<p>생체전기신호 이외에 뇌의 움직임을 직접 관측하는 센서가 실용화 되어있다.</p>
+<ol>
+<li>
+<p>MEG: 신경의 전기적 신호 활동에 의해 발생하는 미소한 자기를 초전도양자간섭계 (SQUID) 등을 이용해 계측. 자기 실드가 적용된 방 이외 이용 불가능</p>
+</li>
+<li>
+<p>PET: 체내에 방사성 동위원소를 주입해 뇌내의 대사량이나 혈류양을 측정</p>
+</li>
+</ol>
+<p><img src="imgs/2018-05-17-09-23-34.png" alt="fMRI"></p>
+<ol start="3">
+<li>fMRI: 강한 자기장을 이용, 체내의 헤모글로빈의 농도를 자기공명신호로 측정. 가장 정밀도가 높집만 몸을 고정하지 않으면 측정 불가능. 근처에 금속 이용 불가능</li>
+</ol>
+<p><img src="imgs/2018-05-17-09-30-28.png" alt="NIRS"></p>
+<ol start="4">
+<li>NIRS: 근적외선을 쏴서 혈내의 헤모글로빈에 의한 흡수의 度合로 뇌내의 혈류양 측정. 두피의 활동밖에 알 수 없지만, 몸을 움직여도 측정 가능해서 휴먼 인터페이스의 응용 가능.</li>
+</ol>
+<hr>
+<h3 id="%EA%B3%BC%EA%B1%B0%EB%AC%B8-4">과거문 4</h3>
+<p>책상 위에서 기계부품의 조립을 하는 작업자에 대해 다음의 내부상태를 계측하기 위해 가장 적절한 생리지표를 고르고, 그 계측방법을 약도를 이용해 설명하라.</p>
+<ol>
+<li>
+<p>이 작업자의 팔에 걸리는 부담</p>
+</li>
+<li>
+<p>이 작업을 행하는 사람의 집중도</p>
+</li>
+<li>
+<p>이 작업자의 뇌의 활동상태</p>
+</li>
+</ol>
+<hr>
+<h2 id="23-%EC%9D%B8%EA%B0%84%EC%9D%98-%EA%B0%90%EA%B0%81%EC%9D%98-%EC%A2%85%EB%A5%98%EC%99%80-%ED%8A%B9%EC%84%B1">2.3. 인간의 감각의 종류와 특성</h2>
+<ul>
+<li>
+<p>특수감각: 특화된 감각기관이 존재 (<strong>시각</strong>, <strong>청각</strong>, 前庭 (균형) 감각, 후각, 미각)</p>
+<ul>
+<li>시각과 청각은 가장 만들기 쉬운 자극</li>
+</ul>
+</li>
+<li>
+<p>体性감각: 전신에 감각수용기가 분포</p>
+<ul>
+<li>
+<p>피부감각: 触圧감, 온감, 냉감, 통각</p>
+</li>
+<li>
+<p>심부감각: 위치감, 운동감, 심부 압감, 심부 통감</p>
+</li>
+</ul>
+</li>
+<li>
+<p>내장감각: 위장에서 발생. 복통, 메스꺼움 등 <a href="#%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">↑</a></p>
+</li>
+</ul>
+<hr>
+<h3 id="%EC%8B%9C%EA%B0%81%EC%9D%98-%ED%8A%B9%EC%84%B1">시각의 특성</h3>
+<p><img src="imgs/2018-05-17-10-45-26.png" alt="안구의 구조"></p>
+<p><img src="imgs/2018-05-17-10-49-24.png" alt="시세포 분포"></p>
+<ul>
+<li>
+<p>시세포</p>
+<ul>
+<li>
+<p>錐体세포: 밝은곳에서 작동, 색의 식별</p>
+</li>
+<li>
+<p>桿体세포: 약한 빛의 검출</p>
+</li>
+</ul>
+</li>
+<li>
+<p>안구미동: 눈은 항상 움직이고 있다</p>
+</li>
+<li>
+<p>サッケード (saccade): 보고싶은것으로 빠르게 시점을 이동하는 기능</p>
+</li>
+</ul>
+<h4 id="%EB%88%88%EC%9D%98-%EC%88%9C%EC%9D%91">눈의 순응</h4>
+<p>주변의 밝기 변화에 따라 錐体세포에서 桿体세포로 기능이 전환되는데 시간이 걸린다</p>
+<ol>
+<li>
+<p>명순응: 어두운곳에서 밝은곳으로 갈때 (桿体 &gt; 錐体)</p>
+</li>
+<li>
+<p>암순응: 밝은곳에서 어두운곳으로 갈떄 (錐体 &gt; 桿体)</p>
+</li>
+</ol>
+<h4 id="%EC%8B%9C%EC%95%BC">시야</h4>
+<p><img src="imgs/2018-05-17-10-57-45.png" alt="시야의 특성"></p>
+<ul>
+<li>
+<p>유효시야: 상세를 알 수 있는 최대 시야</p>
+</li>
+<li>
+<p>보조시야: 볼 수 있는 최대의 범위</p>
+<ul>
+<li>
+<p>영상이 이 범위보다 넓으면 시각 유도성 自己운동이 발생</p>
+</li>
+<li>
+<p>자신이 영상중에 들어있다는 몰입감을 느낌</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="%E5%A5%A5%E8%A1%8C%E7%9F%A5%E8%A6%9A-%EA%B1%B0%EB%A6%AC%EA%B0%90%EA%B0%81">奥行知覚 (거리감각)</h4>
+<p><img src="imgs/2018-05-17-11-08-45.png" alt="시각의 奥行知覚"></p>
+<ul>
+<li>
+<p>양안시차: 좌우의 망막에 비치는 상이 달라 거리를 알 수 있다. 거리감각의 가장 강한 단서.</p>
+</li>
+<li>
+<p>輻輳: 가까운 물체를 볼때는 양안이 가운데로 몰린다</p>
+</li>
+<li>
+<p>조절: 보는 물체의 거리에 따라 수정체의 두께가 변화</p>
+</li>
+<li>
+<p>운동시차: 가까운것을 볼때는 빠르게 움직이고, 먼것을 볼때는 천천히 움직이는거처럼 보인다. <em>가까운것은 몸을 직접 움직이면 원근감을 더 자세히 알 수 있다.</em></p>
+</li>
+</ul>
+<hr>
+<h3 id="%EC%B2%AD%EA%B0%81%EC%9D%98-%ED%8A%B9%EC%84%B1">청각의 특성</h3>
+<p><img src="imgs/2018-05-31-09-11-56.png" alt="귀의 구성"></p>
+<p>소리의 전달: 고막의 진동 &gt; 이소골 &gt; 달팽이관 &gt; 신경</p>
+<p>귓바퀴는 소리가 오는 방향, 세반고리관은 가속도를 알기위해 있음</p>
+<h4 id="%EC%B2%AD%EA%B0%90%EA%B0%90%EB%8F%84">청감감도</h4>
+<p><img src="imgs/2018-05-31-09-13-09.png" alt="청감감도"></p>
+<ul>
+<li>
+<p>等ラウドネス커브: 같은 강한 음으로 들리는 음압 레벨을 묶은 곡선</p>
+</li>
+<li>
+<p>청감 임계치: 인간이 들을 수 있는 최소의 음압 레벨</p>
+</li>
+</ul>
+<h4 id="%EC%B2%AD%EA%B0%81%EC%97%90-%EC%9D%98%ED%95%9C-%E5%A5%A5%E8%A1%8C%E7%9F%A5%E8%A6%9A-%EA%B1%B0%EB%A6%AC%EA%B0%90%EA%B0%81">청각에 의한 奥行知覚 (거리감각)</h4>
+<p><img src="imgs/2018-05-31-09-22-42.png" alt="좌우 거리감각 판별"></p>
+<ul>
+<li>
+<p>좌우방향: 음원으로부터 귀까지 도달하는 거리가 다르다. 이 차이에 의해 음압과 위상이 좌우가 달라, 방향의 판별이 가능</p>
+</li>
+<li>
+<p>상하방향: 귓바퀴를 통과할때 주파수가 변조된다. 그 변과의 도합으로 판별 「두부전달함수」 (HRTF)</p>
+</li>
+<li>
+<p>귀에는 음원의 거리를 지각하는 능력이 없다. 벽이나 바닥에 반사되어 귀에 도달하는 소리는, 음원으로부터 직접 도달하는 소리와 파형이 다르기 떄문에, 판별의 단서가 된다.</p>
+</li>
+</ul>
+<hr>
+<h3 id="%EA%B3%BC%EA%B1%B0%EB%AC%B8-5">과거문 5</h3>
+<ol>
+<li>
+<p>자동차가 가솔할때, 운전자가 받는 감각자극중, 주요한것을 열거하고, 각각 어떠한 감각이 발생하는가 설명하라.</p>
+</li>
+<li>
+<p>10m 떨어져있는 갓발까지의 거리를 시각으로 판별할 때, 가장 유력한 단서를 약도와 같이 설명하라. 또한 같은 위치에 스피커가 있을 때, 그곳까지의 거리를 청각만으로 판별 할 수 있는 단서에 대해 설명해라.</p>
+</li>
+</ol>
+<hr>
+<h2 id="24-%EC%9D%B8%EA%B0%84%EC%9D%98-%EC%8B%AC%EB%A6%AC%EC%A0%81-%ED%8A%B9%EC%84%B1%EC%9D%98-%E6%9E%A0%E7%B5%84%E3%81%BF">2.4. 인간의 심리적 특성의 枠組み</h2>
+<ul>
+<li>
+<p>심리적 특성은 센서로 직접 판별 불가능.</p>
+</li>
+<li>
+<p>대화를 통해 직접 측정한다. 측정밥법 또한 모델 또는 가설을 전제로 한다.</p>
+</li>
+<li>
+<p>3가지 영역이 존재: 인지 내용 영역, 인지 과도 영역, 인지 방략 영역 <a href="#%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">↑</a></p>
+</li>
+</ul>
+<hr>
+<h3 id="%EC%9D%B8%EC%A7%80-%EB%82%B4%EC%9A%A9-%EC%98%81%EC%97%AD">인지 내용 영역</h3>
+<ul>
+<li>
+<p>장기기억으로 축적된 지식. 기계나 그 조작방법에 대해, 유저가 어떤 지식을 가지고 있는가.</p>
+</li>
+<li>
+<p>再認法: 일단 기억한것을 얼마나 오래동안 기억하나 확인함. 자극용 리스트와 再認法용 리스트의 조합으로, 再認率를 측정.</p>
+</li>
+</ul>
+<p>언어적 지식: 사물의 개념, 성질, 에피소드와 관한 기억</p>
+<p>비언어적 지식: 영상, 음악 등 감각적인 기억, <strong>再認率가 높다.</strong></p>
+<hr>
+<h3 id="%EC%9D%B8%EC%A7%80-%EA%B3%BC%EB%8F%84-%EC%98%81%EC%97%AD">인지 과도 영역</h3>
+<ol>
+<li>응답 시간 분석: 입력으로부터 출력에 다르기까지 다양한 처리단계에 의한 소요시간 특성을 명확히 함.</li>
+</ol>
+<ul>
+<li>
+<p>가산요인법</p>
+<ul>
+<li>
+<p>단순반응: 스위치에 불이 들어오면 누른다</p>
+</li>
+<li>
+<p>자극분류: 스위치가 2개 존재</p>
+</li>
+<li>
+<p>선택응답: A 스위치는 불이 들어오면 누르고, B 스위치는 누르지 않는다.</p>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>프로토콜 분석: 인간이 어떻게 문제해결을 하려고 하는지를 명확히 한다.</li>
+</ol>
+<ul>
+<li>
+<p>피험자와 실험자가 조를 짜 같이 작업한다. <strong>発話</strong>를 기록분석한다.</p>
+</li>
+<li>
+<p>문제해결 도중에 생각한것을 말로 표현한다. (Think Aloud) 질문을 잘 하지 않으면, 피험자의 생각을 알기 어렵다.</p>
+</li>
+</ul>
+<hr>
+<h3 id="%EC%9D%B8%EC%A7%80-%EB%B0%A9%EB%9E%B5-%EC%98%81%EC%97%AD">인지 방략 영역</h3>
+<p>인지 내용과 인지 과정을 컨트롤 하는 관리계가 존재</p>
+<ol>
+<li>메타 지식: 지식에 관한 지식.</li>
+</ol>
+<ul>
+<li>자신이 무언가를 알고있는가에 대해 알고있어, 검색시 최적 방침을 세울 수 있다. ex: 백악관의 전화번호를 알고있는가? &gt; 즉시 알고있지 않으면 대답 할 수 있다. (모른다는 사실을 알기 때문)</li>
+</ul>
+<ol start="2">
+<li>주의자원: 인간의 지적 작업에는 처리내용의 상한이 존재한다. 이 범위 내에서는 복수의 작업을 동시에 가능하다. 이것의 수학적 기술법의 연구가 진행중</li>
+</ol>
+<ul>
+<li>
+<p>감각 モダリティ의 차이는 별도의 주의자원 (음악을 들으면서 독서 가능)</p>
+</li>
+<li>
+<p>중추처리와 반응과정은 별도의 주의자원 (대화중 볼펜을 돌릴 수 있다. 독서하며 대화 불가능)</p>
+</li>
+<li>
+<p>언어적 정보와 비언어적 정보는 별도의 주의자원 (영화를 보며 자막을 동시에 볼 수 있다)</p>
+</li>
+</ul>
+<hr>
+<h3 id="%EA%B0%90%EC%84%B1">감성</h3>
+<ul>
+<li>지성 vs 감성</li>
+</ul>
+<p>지성은 논리적, 감성은 비논리적, 주관성이 강하다
+주관적인 정보가 인간의 지식활동에 빠질 수 없다</p>
+<ul>
+<li>어떻게 감성정보를 이용하는가</li>
+</ul>
+<p>평가법: 피험자에 의한 태도에 대해 척도로 대답하는 방법
+대표적으로 SD법 존재 (Semantic Differential Techique)</p>
+<hr>
+<h3 id="sd%EB%B2%95%EC%9D%98-%EC%98%88%EC%8B%9C">SD법의 예시</h3>
+<p><img src="imgs/2018-05-31-10-06-03.png" alt="SD법"></p>
+<p>형용사로 표시된 동의/반의어에 대해 5~7단계의 평가를 피험자에게 실시함</p>
+<p>주성분 분석을 행해, 경향을 조사한다.</p>
+<hr>
+<h3 id="%EC%8B%AC%EB%A6%AC%EC%A0%81-%ED%8A%B9%EC%84%B1%EC%97%90-%EB%94%B0%EB%A5%B8-%EC%9D%B8%EA%B0%84%EC%9D%98-%EB%AA%A8%EB%8D%B8">심리적 특성에 따른 인간의 모델</h3>
+<p>&quot;모델 휴먼 프로세서&quot; S.K.Card</p>
+<p>인간을 컴퓨터의 프로세서와 메모리로 비유해
+응답시간 분석의 결과를 조절해 인터랙션의 설계에 사용하게 함</p>
+<p>정보가 제시된 후로부터 인간이 행동을 종료하기까지 얼마나 시간이 걸리나 예측</p>
+<p>문자를 베이스로 한 모델이 있기 떄문에, 인터럭션 설계에 실용화되기엔 부족했다.</p>
+<h4 id="%EB%AA%A8%EB%8D%B8-%ED%9C%B4%EB%A8%BC-%ED%94%84%EB%A1%9C%EC%84%B8%EC%84%9C%EC%9D%98-%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%8B%9C%EA%B0%84">모델 휴먼 프로세서의 사이클 시간</h4>
+<p><img src="imgs/2018-05-31-09-14-31.png" alt="모델 휴먼 프로세서"></p>
+<ul>
+<li>
+<p>지각 프로세서: τp = 100 (50~200) ms</p>
+</li>
+<li>
+<p>지식 프로세서: τc = 70 (25~700) ms</p>
+</li>
+<li>
+<p>운동 프로세서: τm = 70 (30~100) ms</p>
+</li>
+</ul>
+<h4 id="%EC%9E%91%EC%97%85%EC%8B%9C%EA%B0%84-%EC%B6%94%EC%A0%95%EC%9D%98-%EC%98%88%EC%8B%9C">작업시간 추정의 예시</h4>
+<p>이름의 照合 (피험자에게 어떤 이름을 기억시켜, 화면에 기억한 이름이 나오면 스위치를 누르게 시킨다)</p>
+<blockquote>
+<p>화면의 글자를 본다 (τp)</p>
+<p>문자를 인식한다 (τc)</p>
+<p>장기기억으로의 매칭 (τc)</p>
+<p>반응결정 (τc)</p>
+<p>스위치를 누른다 (τm)</p>
+<p>소요시간: T = τp + 3τc + τm = 380 [ms]</p>
+</blockquote>
+<hr>
+<h3 id="%EA%B3%BC%EA%B1%B0%EB%AC%B8-6">과거문 6</h3>
+<ol>
+<li>
+<p>인간과 컴퓨터의 인터페이스는 현대는 GUI지만, 1980년대 이전은 CUI가 주류였다. 양자의 차이점이 인지 내용 영역과 인지 방략 영역에 있어 어떠한 특성을 가지는지 기술하라.</p>
+</li>
+<li>
+<p>응답시간 분석의 실험방법에 대해 설명하라, 또한 그 知見를 이용해, 컴퓨터 화면상에 소정의 문자열을 발견하는 작업을 최적화하는 방법에 대해 기술하라.</p>
+</li>
+</ol>
+<hr>
+<h2 id="25-%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EC%82%AC%ED%9A%8C%EC%A0%81-%ED%8A%B9%EC%84%B1">2.5. 휴먼 인터페이스의 사회적 특성</h2>
+<p><img src="imgs/2018-05-31-10-45-53.png" alt="노무쿤"></p>
+<p>미디어 기술을 이용한 커뮤니케이션 공간, 협력작업 <a href="#%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">↑</a></p>
+<hr>
+<h3 id="%EC%9D%B8%EA%B0%84%EC%99%80-%EC%9D%B8%EA%B0%84%EC%9D%98-%EA%B4%80%EA%B3%84%EB%A5%BC-%ED%98%95%EC%84%B1%ED%95%98%EB%8A%94-%EA%B5%AC%EC%A1%B0">인간와 인간의 관계를 형성하는 구조</h3>
+<p>Verbal 커뮤니케이션</p>
+<ul>
+<li>언어에 의한 정보 전달: 전해지는 정보의 1/3</li>
+</ul>
+<p>None-Verbal 커뮤니케이션</p>
+<ul>
+<li><strong>언어 이외</strong>에 의한 정보 전달: 전해지는 <em>정보의 2/3</em> (표정, 목소리, 제스쳐 등)</li>
+</ul>
+<hr>
+<h3 id="%EC%82%AC%ED%9A%8C%EC%A0%81-%ED%8A%B9%EC%85%A9%EC%9D%98-%EC%A1%B0%EC%82%AC">사회적 특셩의 조사</h3>
+<p>사회적 특성의 조사를 위해서는 사회적 방법을 도입</p>
+<ol>
+<li>대인 사회 심리학: 대화시, 시선에 따라 전해지는 방법이 다르다. 상대의 눈을 보고 있지 않으면, 거짓말을 하는거같이 보인다.</li>
+</ol>
+<ul>
+<li>
+<p>휴먼 인터페이스는 시점의 공유가 중요. 「공동주의」 복수 작업자가 같은것을 보는 것.</p>
+</li>
+<li>
+<p>원격 회의에서는 시선을 일치하는것이 어렵다: 보통 카메라와 디스플레이는 다른 위치에 있다.</p>
+</li>
+</ul>
+<p><img src="imgs/2018-05-31-10-37-32.png" alt="클리어보드"></p>
+<ul>
+<li>원격으로 시선을 일치하기 위해서는 특별한 장치가 필요 (프로젝터를 이용한 클리어보드)</li>
+</ul>
+<ol start="2">
+<li>대인거리 (Proxemics): 타인과의 거리를 두는 방법은 전달수단의 한가지</li>
+</ol>
+<ul>
+<li>
+<p>친밀거리: 0.5m (친한 관계와의 대화)</p>
+</li>
+<li>
+<p>개체거리: 1.2m (타인과의 대화)</p>
+</li>
+<li>
+<p>사회거리: 3.7m (일반적 회담)</p>
+</li>
+<li>
+<p>공중거리: 그 이상 (강연회 등)</p>
+</li>
+</ul>
+<p><img src="imgs/2018-05-31-10-51-18.png" alt="텔레 프레젠테이션 로봇"></p>
+<ul>
+<li>원격 회의에서 친밀거리, 개체거리를 제시하는것은 어렵지만, 로봇을 이용하면 가능</li>
+</ul>
+<h4 id="%EC%96%91%EC%A0%81%EC%A1%B0%EC%82%AC">양적조사</h4>
+<ul>
+<li>
+<p>통계데이터를 사용한다.</p>
+</li>
+<li>
+<p>질문지를 이용해 척도화하는것도 가능하다.</p>
+</li>
+<li>
+<p>정량적이지만 본질이 보이지않을 때가 많다.</p>
+</li>
+</ul>
+<h4 id="%EC%A7%88%EC%A0%81%EC%A1%B0%EC%82%AC">질적조사</h4>
+<ul>
+<li>
+<p>관찰기록나 인터뷰의 결과를 분석한다.</p>
+</li>
+<li>
+<p>효율이 나쁘고 安生的인 결과만 나오지만 본질을 보는 것이 가능하다.</p>
+</li>
+</ul>
+<h5 id="%EB%91%90%EA%B0%80%EC%A7%80-%EC%A7%88%EC%A0%81%EC%A1%B0%EC%82%AC">두가지 질적조사</h5>
+<ul>
+<li>
+<p>エスノメソドロシー</p>
+<ul>
+<li>대상이 되는 사회에서 발생하고 있는 것을 관찰해 기록한다. 회화나 상호행위를 분석한다.</li>
+</ul>
+</li>
+<li>
+<p>エスノグラフィー(참여관찰)</p>
+<ul>
+<li>민족사학에서 행해지고 있는방법으로, 그 사회의 일원이 되어 생활해 정보를 얻는다. 마케팅에 응용하도록 되어있다.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="%EA%B3%BC%EA%B1%B0%EB%AC%B8-7">과거문 7</h3>
+<ol>
+<li>
+<p>인간과 인간의 커뮤니케이션에 있어, 제스쳐가 하는 역할에 대해 기술하라.</p>
+</li>
+<li>
+<p>제스쳐를 컴퓨터의 인터페이스로 도입할때, 필요한 센서에 대해 기술하라.</p>
+</li>
+<li>
+<p>인간이 문제해결을 하는 프로세스를 분석하는 수법에 대해, 혼자 생각할떄와, 5명이 협동할때의 각각 적절한 분석방법에 대해 기술하라.</p>
+</li>
+</ol>
+<hr>
+<h2 id="31-%EC%9D%B8%ED%84%B0%EB%9F%AD%ED%8B%B0%EB%B8%8C%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%98-%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0">3.1. 인터럭티브시스템의 기본구조</h2>
+<p><img src="imgs/2018-06-12-10-47-05.png" alt="인터렉티브 시스템의 기본구조"></p>
+<ol>
+<li>
+<p>입력인터페이스: 유저의 행동의 센싱</p>
+</li>
+<li>
+<p>출력인터페이스: 유저의 감각기관에의 정보제시</p>
+</li>
+<li>
+<p>상호작용의 대상: 컴퓨터 내의 버추얼 세계의 기술. 원격의 실세계의 전송 <a href="#%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">↑</a></p>
+</li>
+</ol>
+<hr>
+<h3 id="%EC%9E%85%EB%A0%A5%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">입력인터페이스</h3>
+<p>하드웨어
+센서 - 인간의 상태를 계측
+소프트웨어
+인식엔진 - 센서의 데이터로부터 인간의 의도를 인식</p>
+<h4 id="%EC%9E%85%EB%A0%A5%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EC%B2%B4%EA%B3%84">입력인터페이스의 체계</h4>
+<p><img src="imgs/2018-06-12-10-37-12.png" alt="입력 인터페이스의 체계"></p>
+<hr>
+<h3 id="%EC%B6%9C%EB%A0%A5%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">출력인터페이스</h3>
+<p>하드웨어
+감각디스플레이 - 인간의 감각기관에 합성적인 정보를 전한다.
+소프트웨어
+디스플레이드라이버 - 감각디스플레이의 디바이스드라이버
+렌더러 - 제시데이터의 생성</p>
+<h4 id="%EC%B6%9C%EB%A0%A5-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EC%B2%B4%EA%B3%84">출력 인터페이스의 체계</h4>
+<p><img src="imgs/2018-06-12-10-37-53.png" alt="출력 인터페이스의 체계"></p>
+<hr>
+<h2 id="32-%EC%8B%9C%EA%B0%81-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4">3.2. 시각 디스플레이</h2>
+<p>입체시각 방식 <a href="#%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">↑</a></p>
+<hr>
+<h3 id="2%EC%95%88%EC%8B%9D">2안식</h3>
+<p>좌우의 눈에 다른 영상을 표시, 양안의 시차를 이용해서 입체시를 구성. 양안에 보이는 영상을 나누는 다양한 방법이 존재.</p>
+<h4 id="%EC%95%88%EA%B2%BD%EC%9D%84-%EC%9D%B4%EC%9A%A9">안경을 이용</h4>
+<ul>
+<li>
+<p>시분할식: 액정 셔터를 사용. 동기신호를 수신할 필요가 있지만, 품질적으로 우수.</p>
+</li>
+<li>
+<p>편광식: 편광 필터를 사용. 스크린이 편광에 대응해야만 한다. 저렴하게 안경 제작 가능.</p>
+</li>
+</ul>
+<h4 id="hmd-%EB%91%90%EB%B6%80%ED%83%91%EC%A0%9C%EC%8B%9D-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4">HMD (두부탑제식 디스플레이)</h4>
+<p><img src="imgs/2018-06-14-09-04-29.png" alt="HMD"></p>
+<ul>
+<li>
+<p>좌우의 눈에 별도의 디스플레이 패널을 이용, 렌즈를 패널 앞에 둬서화면이 멀리 있는것처럼 만든다.</p>
+</li>
+<li>
+<p>두부의 위치센서와의 조합으로, 머리가 향하고있는쪽으로 영상을 보여주는것을 통해, 높은 융합감을 얻을 수 있다.</p>
+</li>
+<li>
+<p>장비를 재대로 착용하지 않으면 빛이 새는등 문재가 존재.</p>
+</li>
+</ul>
+<h4 id="%E8%A3%B8%E7%9C%BC%EC%9E%85%EC%B2%B4%EC%8B%9C">裸眼입체시</h4>
+<p><img src="imgs/2018-06-14-09-10-54.png" alt="裸眼입체시"></p>
+<ul>
+<li>
+<p>안경을 사용하지 않고 입체시를 구현.</p>
+</li>
+<li>
+<p>입체시가 사용 가능한 위치가 고정, 품질 하락. 실용성이 적다.</p>
+</li>
+</ul>
+<hr>
+<h3 id="%E4%BD%93%E7%A9%8D%E8%B5%B0%E6%9F%BB%E5%9E%8B-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4">体積走査型 디스플레이</h3>
+<p><img src="imgs/2018-06-14-09-19-22.png" alt="회전 디스플레이"></p>
+<ul>
+<li>공간내에 발광체를 고속으로 이동시켜, 잔상표과를 이용해서 공간을 빚으로 충전시킨다.</li>
+</ul>
+<blockquote>
+<p>액정 패널을 고속으로 회전시키는 등</p>
+</blockquote>
+<ul>
+<li>여러명이 어디서 봐도 입체시가 이용 가능, 고속으로 회전시키는것이 어려움</li>
+</ul>
+<hr>
+<h3 id="%EB%AA%B0%EC%9E%85%ED%98%95-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4">몰입형 디스플레이</h3>
+<ul>
+<li>
+<p>대형 스크린으로 시야를 덮는다.</p>
+</li>
+<li>
+<p>HMD는 시야의 확장에 한계가 존재. (100도 정도) 또한 복수 인원이 동시에 이용 불가능.</p>
+</li>
+<li>
+<p>몰입 디스플레이는 360도 가능, 여러명 동시 사용 가능.</p>
+</li>
+</ul>
+<h4 id="%EB%8B%A4%EB%A9%B4%EC%B2%B4%ED%98%95">다면체형</h4>
+<p><img src="imgs/2018-06-14-09-24-31.png" alt="몰입형"></p>
+<ul>
+<li>복수의 평면 스크린을 조합</li>
+</ul>
+<blockquote>
+<p>CAVE (다면형 스크린 4면)</p>
+</blockquote>
+<h4 id="%EA%B3%A1%EB%A9%B4-%EC%8A%A4%ED%81%AC%EB%A6%B0">곡면 스크린</h4>
+<p><img src="imgs/2018-06-14-09-30-54.png" alt="곡면 스크린"></p>
+<ul>
+<li>
+<p>원통형, 구형 스크린으로 시야를 감싼다.</p>
+</li>
+<li>
+<p>눈과 스크린과의 거리가 일정, 왜곡이 일어나지 않는다. 여러명이서 봐도 자연스러운 영상을 보는것이 가능.</p>
+</li>
+</ul>
+<hr>
+<h2 id="33-%EC%B2%B4%EC%84%B1%EA%B0%90%EA%B0%81%EC%9D%84-%EC%A0%9C%EC%8B%9C%ED%95%98%EB%8A%94-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4">3.3. 체성감각을 제시하는 디스플레이</h2>
+<p><img src="imgs/2018-06-14-09-38-30.png" alt="햅틱 인터페이스"></p>
+<p>햅틱 인터페이스</p>
+<ul>
+<li>햅틱 인터페이스의 원리: 인공적으로 반력을 생성, 피부감각, 심부감각에 피드백을 돌려줌 <a href="#%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">↑</a></li>
+</ul>
+<hr>
+<h3 id="%ED%94%BC%EB%B6%80%EA%B0%90%EA%B0%81%EC%A0%91%EC%95%95%EA%B0%90-%EC%9D%98-%EC%A0%9C%EC%8B%9C%EB%B0%A9%EB%B2%95">피부감각(접압감) 의 제시방법</h3>
+<p>触知ピン이라고 불리는 작은 액츄에이터를 격자형으로 깔아 손가락으로 만진다.</p>
+<p>시각 장애인용의 オプタコン이라는 제품도 있지만, 지각의 대행은 어렵다.</p>
+<p>손가락으로 전기나 공기업으로 자극을 전하는 방법도 연구중</p>
+<hr>
+<h3 id="%EC%8B%AC%EB%B6%80%EA%B0%90%EA%B0%81%EC%9D%98-%EC%A0%9C%EC%8B%9C%EB%B0%A9%EB%B2%95">심부감각의 제시방법</h3>
+<p>딱딱함이나 무게 등의 반응을 생성한다.</p>
+<p>3가지 구현방법이 존재</p>
+<p><img src="imgs/2018-06-14-10-17-46.png" alt="심부감각 구현법"></p>
+<h4 id="%EC%9E%A5%EC%B0%A9%ED%98%95-%E3%82%A8%E3%82%B0%E3%82%BE%E3%82%B9%E3%82%B1%E3%83%AB%E3%83%88%E3%83%B3">장착형 (エグゾスケルトン)</h4>
+<p><img src="imgs/2018-06-14-09-50-45.png" alt="장착형"></p>
+<p><img src="imgs/2018-06-14-09-50-58.png" alt="장착형 외골격"></p>
+<p>외골격에 액츄에이터를 붙여서 저항력을 가한다</p>
+<p>단점: 탈착이 어려움, 잘 장착하지 않으면 성능을 발휘하기 어렵다.</p>
+<h4 id="%ED%8C%8C%EC%A7%80%ED%98%95">파지형</h4>
+<p><img src="imgs/2018-06-14-09-54-13.png" alt="파지형"></p>
+<p><img src="imgs/2018-06-14-09-54-26.png" alt="파지형 의료"></p>
+<p>파지부 끝에 액츄에이터를 붙여서 저항감을 만든다. 실현이 가장 쉽고, 의료 및 디자인등의 분야에서 실용화가 진행되고있다.</p>
+<p>단점: 물체를 잡는 동작은 구현 불가능, 반력이 간접적 &gt; 자연스러운 느낌은 아니다.</p>
+<h4 id="%EB%8C%80%EC%83%81%ED%98%95">대상형</h4>
+<p><img src="imgs/2018-06-14-10-15-47.png" alt="대상형"></p>
+<p>장비 자체의 형태나 딱딱함을 전해준다. 맨손으로 만지기 떄문에 자연스러움.</p>
+<p>단점: 실현이 어렵다, 해상도가 낮다</p>
+<hr>
+<h3 id="%EC%9C%B5%ED%95%A9%EA%B0%90%EA%B0%81%EC%9D%98-%EC%A0%9C%EC%8B%9C%EB%B0%A9%EB%B2%95">융합감각의 제시방법</h3>
+<p><img src="imgs/2018-06-14-10-19-52.png" alt="트러스트레드밀 리어돔"></p>
+<p>진행: 심부감각 + 시각 + 전정감각</p>
+<p><img src="imgs/2018-06-14-10-18-34.png" alt="음식 시뮬레이터"></p>
+<p>구내감각: 미각 + 심부감각 (구강) + 피부감각 (혀) + 청각 + 후각</p>
+<hr>
+<h3 id="%EA%B3%BC%EA%B1%B0%EB%AC%B8-8">과거문 8</h3>
+<ol>
+<li>
+<p>심부감각을 가지게 하는 수용기가 존재하는 장소와, 그것에 의해 인간이 무엇을 지각하는가에 대해 설명하라.</p>
+</li>
+<li>
+<p>손에 발생하는 심부감각을 제시하는 장비중, 가장 실현이 편하고 실용성이 높은것을 약도를 사용해 설명하라.</p>
+</li>
+<li>
+<p>배가 좌초되는 사고가 일어났다고 할때. 하층의 선실에서 구명정이 있는 상갑판까지 피난하는 상황을 가정하자. 피난 경로를 발견하기 위해서는 주위를 넓게 볼 필요가 있다. 이러한 피난 행동을 유사 체험하는 시스템에서 시각 정보를 제공하는데 적절한 장치에 대해 약도와 같이 설명하라.</p>
+</li>
+</ol>
+<hr>
+<h2 id="4-%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%ED%8F%89%EA%B0%80%EB%B0%A9%EB%B2%95">4. 휴먼 인터페이스의 평가방법</h2>
+<p>휴먼인터페이스의 평가방법 <a href="#%ED%9C%B4%EB%A8%BC-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">↑</a></p>
+<hr>
+<h3 id="%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4%ED%8F%89%EA%B0%80">퍼포먼스평가</h3>
+<p>모델 테스크를 설정해 성적을 측정한다.</p>
+<ol>
+<li>
+<p>완수시간</p>
+</li>
+<li>
+<p>정확도 (정확도 오차 등)</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>장점: 정량적인 결과가 나옴</p>
+</li>
+<li>
+<p>단점: 모델테스크의 설정의 방법에 따라 결과가 나온다. 시스템의 좋음이 성적에 연결되지 않을 때가 많다</p>
+</li>
+</ul>
+<hr>
+<h3 id="%EC%A3%BC%EA%B4%80%ED%8F%89%EA%B0%80">주관평가</h3>
+<ul>
+<li>
+<p>질문지: 앙케이트는 가장 간단히 데이터화가 가능하다. 하지만 질문항목의 立て方에 따라 결과가 크게 좌우된다. 해답은 장치의 체험 후에 행하므로 실험중에 무엇을 느꼈는지는 모르는 경우가 많다.</p>
+</li>
+<li>
+<p>인터뷰: 장치의 체험중의 가상을 듣는 것이 가능하다.</p>
+</li>
+<li>
+<p>관찰기록: 장치의 체험중의 동작을 기록,분석함으로서 본인이 눈치채지 못한 것도 알 수 있다.</p>
+</li>
+</ul>
+<hr>
+<h3 id="%EC%83%9D%EB%A6%AC%EC%A7%80%ED%91%9C%EC%97%90-%EC%9D%98%ED%95%9C-%ED%8F%89%EA%B0%80">생리지표에 의한 평가</h3>
+<ul>
+<li>
+<p>근전도: 근육의 활동을 계측함으로써 장치의 효과를 정량적으로 평가하는 것이 가능하다.</p>
+</li>
+<li>
+<p>심전도: 긴장상태나 집중도를 알 수 있다.</p>
+</li>
+<li>
+<p>뇌 센서: NIRS를 사용하면 장치의 체험중에 뇌의 어느 부위가 활동하고 있는 지를 알 수 있다.</p>
+</li>
+</ul>
+<hr>
+
+</body>
+</html>
