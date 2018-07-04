@@ -1,0 +1,137 @@
+---
+layout: null
+title: Rekorn Sounds
+description: DJ Rekorn's protfolio and bio website.
+sitemap:
+    priority: 1.0
+    lastmod: 2017-11-02
+    changefreq: weekly
+---
+
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	{% include head.html %}
+</head>
+
+<body class="is-loading">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+
+			{% include nav.html %}
+
+			<ul class="icons">
+				<li>
+					<a href="https://neodymium-pudding.bandcamp.com/" class="icon fa-home" rel="nofollow">
+						<span class="label">Bandcamp</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://soundcloud.com/urun4m0r1" class="icon fa-soundcloud" rel="nofollow">
+						<span class="label">Soundcloud</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.mixcloud.com/urun4m0r1" class="icon fa-mixcloud" rel="nofollow">
+						<span class="label">Mixcloud</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<!-- Featured Post -->
+			<article class="post featured">
+				<header class="major">
+					<h2>
+						<a href="">Neodymium Pudding</a>
+					</h2>
+					<p>Record label 「ネオジムぷりん」
+					</p>
+					<a href="" class="image main"><img src="/images/banner.png" alt="" /></a>
+					<ul class="icons">
+						<li>
+							<a href="https://neodymium-pudding.bandcamp.com/" class="icon fa-home" rel="nofollow">
+								<span class="label">Bandcamp</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://soundcloud.com/urun4m0r1" class="icon fa-soundcloud" rel="nofollow">
+								<span class="label">Soundcloud</span>
+							</a>
+						</li>
+					</ul>
+				</header>
+				<p>2017.08 Released 「東方ステップ」 @コミックマーケット92
+						<br />2017.10 Released「もっともっと​!​! ゆかりさん」 @M3-2017秋
+            <br />2018.08 Released 「東方スタイル」 @コミックマーケット94 </p>
+						<hr>
+				<p>
+          Contact with us!
+          <form method="POST" action="https://formspree.io/{{site.email}}">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="3"></textarea>
+            </div>
+            <ul class="actions">
+              <li>
+                <input type="submit" value="Send Message" />
+              </li>
+            </ul>
+          </form>
+				</p>
+
+			</article>
+
+			<!-- Footer -->
+			<footer>
+				<ul class="actions">
+            <li>
+              <a href="{{ "/" | absolute_url }}" class="button">About</a>
+            </li>
+            <li>
+              <a href="{{ "/works/" | absolute_url }}" class="button">Works</a>
+            </li>
+					<li>
+						<a href="{{ "/blog/" | absolute_url }}" class="button">Anisong DJ Guide</a>
+					</li>
+				</ul>
+			</footer>
+
+		</div>
+		<!-- Footer -->
+		{% include foot.html %}
+
+	</div>
+
+	<!-- Scripts -->
+	{% include scripts-main.html %} {% include tracking.html %}
+
+</body>
+
+</html>
