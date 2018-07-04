@@ -9,7 +9,6 @@ sitemap:
 ---
 <h2>Original Musics</h2>
 <iframe  align="middle" style="border: 0; width: 50%; height: 373px;" src="https://bandcamp.com/EmbeddedPlayer/album=1181313294/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="http://neodymium-pudding.bandcamp.com/album/-">東方ステップ by 東方パラダイス</a></iframe>
-<br/>
 <iframe  align="middle" style="border: 0; width: 50%; height: 340px;" src="https://bandcamp.com/EmbeddedPlayer/album=3221339734/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="http://neodymium-pudding.bandcamp.com/album/--2">もっともっと!! ゆかりさん by Neodymium Pudding</a></iframe>
 
 ---
