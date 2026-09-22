@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-09-23.2",
+  "revision": "2026-09-23.5",
   "identity": {
     "name_ko": "박태준",
     "name_en": "Taejoon Park",
@@ -188,16 +188,35 @@
     "url": "https://github.com/friflo/Friflo.Engine.ECS/pull/126"
   },
   "skills": [
-    "C#",
     "Unity",
+    "Godot",
+    "Stride",
+    "Android",
+    "C#",
     ".NET",
-    "Git",
+    "Java",
     "Python",
     "TypeScript",
     "React",
     "WebRTC",
-    "Godot",
-    "Stride"
+    "WebView2",
+    "Friflo.Engine.ECS",
+    "TensorFlow",
+    "OpenCV",
+    "HoloLens",
+    "VR",
+    "Git",
+    "Jira",
+    "Confluence",
+    "Jenkins",
+    "Blender",
+    "Excel",
+    "PowerPoint",
+    "Word",
+    "한글 / Hancom HWP",
+    "C",
+    "C++",
+    "Unreal Engine"
   ],
   "languages": [
     {
@@ -334,10 +353,34 @@
       "summary_ko": "MR HMD 콘크리트 균열 검사 연구의 공개 C# 코드.",
       "summary_en": "Public C# code from the mixed reality concrete crack inspection research.",
       "url": "https://github.com/urun4m0r1/CrackManager"
+    },
+    {
+      "title": "RGTool",
+      "summary_ko": "리듬게임 정보와 플레이 기록을 관리하는 Android 앱. Java로 제작했습니다.",
+      "summary_en": "A Java Android app for rhythm-game information and play records.",
+      "url": "https://rekorn.notion.site/d80b4601deba46008005275379aa6357"
+    },
+    {
+      "title": "꿈드림",
+      "summary_ko": "학생 창업동아리에서 개발한 장애인 보조 Android 앱. Java·OpenCV를 사용했습니다.",
+      "summary_en": "An assistive Android app developed in a student startup club using Java and OpenCV.",
+      "url": "https://rekorn.notion.site/d80b4601deba46008005275379aa6357"
+    },
+    {
+      "title": "Albida Soft",
+      "summary_ko": "학생 창업동아리에서 제작한 23개 이상의 Android 앱. 현재 배포가 종료된 초기 개발 기록입니다.",
+      "summary_en": "Over 23 Android apps built in a student startup club. An archive of early work; distribution has ended.",
+      "url": "https://rekorn.notion.site/d80b4601deba46008005275379aa6357"
+    },
+    {
+      "title": "Rekorn’s TechBlog",
+      "summary_ko": "Unity·Unreal 등 게임 개발 팁을 정리한 기술 블로그.",
+      "summary_en": "Technical notes on Unity, Unreal and game development.",
+      "url": "https://rekorn.oopy.io/"
     }
   ],
   "music": {
-    "years": "2016–2019",
+    "years": "2016–2022",
     "roles": [
       "DJ",
       "Producer",
@@ -349,6 +392,170 @@
     "release_date": "2018-10-28",
     "url": "https://neodymium-pudding.bandcamp.com/album/divergence-expansion",
     "soundcloud": "https://soundcloud.com/urun4m0r1",
-    "mixcloud": "https://www.mixcloud.com/urun4m0r1"
-  }
+    "mixcloud": "https://www.mixcloud.com/urun4m0r1",
+    "image": "/assets/portfolio/divergence-expansion.jpg",
+    "image_source": "https://f4.bcbits.com/img/a3603419067_10.jpg",
+    "illustration": "Chobi",
+    "releases": [
+      {
+        "id": "touhou-style",
+        "title": "東方スタイル",
+        "year": "2018",
+        "released": "2018-08-10",
+        "role_ko": "프로듀싱 · 전곡 편곡",
+        "role_en": "Producer · all arrangements",
+        "url": "https://neodymium-pudding.bandcamp.com/album/--3",
+        "image_source": "https://f4.bcbits.com/img/a1426098880_10.jpg",
+        "illustration": "タチバナ",
+        "image": "/assets/portfolio/touhou-style.jpg"
+      },
+      {
+        "id": "touhou-step",
+        "title": "東方ステップ",
+        "year": "2017",
+        "released": "2017-08-11",
+        "role_ko": "프로듀싱 · 5곡 편곡",
+        "role_en": "Producer · five arrangements",
+        "url": "https://neodymium-pudding.bandcamp.com/album/-",
+        "image_source": "https://f4.bcbits.com/img/a3315078259_10.jpg",
+        "illustration": "タチバナ",
+        "image": "/assets/portfolio/touhou-step.jpg"
+      },
+      {
+        "id": "motto-yukari",
+        "title": "もっともっと!! ゆかりさん",
+        "year": "2017",
+        "role_ko": "프로듀싱 · 작곡",
+        "role_en": "Producer · composer",
+        "url": "https://neodymium-pudding.bandcamp.com/album/--2",
+        "image_source": "https://f4.bcbits.com/img/a1579162288_10.jpg",
+        "illustration": "あおい",
+        "image": "/assets/portfolio/motto-yukari.jpg"
+      },
+      {
+        "id": "divergence-expansion",
+        "title": "Divergence: Expansion",
+        "year": "2018",
+        "released": "2018-10-28",
+        "role_ko": "컴필레이션 참여 · Tropospheric Invasion",
+        "role_en": "Compilation track · Tropospheric Invasion",
+        "url": "https://neodymium-pudding.bandcamp.com/album/divergence-expansion",
+        "image_source": "https://f4.bcbits.com/img/a3603419067_10.jpg",
+        "illustration": "Chobi",
+        "image": "/assets/portfolio/divergence-expansion.jpg"
+      }
+    ],
+    "activities": [
+      {
+        "date": "2017–2019",
+        "title": "アニソン楽類 · はぴりり",
+        "role_ko": "일본 애니송 클럽 레지던트 DJ",
+        "role_en": "Resident DJ at Japanese anisong events"
+      },
+      {
+        "date": "2017–2018",
+        "title": "Comiket 92 · Comiket 94 · M3",
+        "role_ko": "음반 제작·발표 및 행사 참가",
+        "role_en": "Album production, releases and event participation"
+      },
+      {
+        "date": "2018.03",
+        "title": "유리쿠라 vol.1",
+        "role_ko": "행사 기획 · DJ · VJ",
+        "role_en": "Organizer · DJ · VJ"
+      },
+      {
+        "date": "2018.09",
+        "title": "애니프리 2회 ~바지페스~",
+        "role_ko": "총괄 기획 · 메인 DJ",
+        "role_en": "Lead organizer · main DJ"
+      },
+      {
+        "date": "2022.07",
+        "title": "바지락 페스티벌",
+        "role_ko": "행사 기획 · DJ",
+        "role_en": "Organizer · DJ"
+      },
+      {
+        "date": "2022.12",
+        "title": "에로토토 6회",
+        "role_ko": "DJ",
+        "role_en": "DJ"
+      }
+    ],
+    "activity_source": "https://rekorn.notion.site/d80b4601deba46008005275379aa6357"
+  },
+  "skill_groups": [
+    {
+      "name_ko": "게임 엔진 · 플랫폼",
+      "name_en": "Game engines & platforms",
+      "items": [
+        "Unity",
+        "Godot",
+        "Stride",
+        "Android"
+      ]
+    },
+    {
+      "name_ko": "언어 · 프레임워크",
+      "name_en": "Languages & frameworks",
+      "items": [
+        "C#",
+        ".NET",
+        "Java",
+        "Python",
+        "TypeScript",
+        "React"
+      ]
+    },
+    {
+      "name_ko": "클라이언트 · 시스템",
+      "name_en": "Client & systems",
+      "items": [
+        "WebRTC",
+        "WebView2",
+        "Friflo.Engine.ECS"
+      ]
+    },
+    {
+      "name_ko": "영상 처리 · XR",
+      "name_en": "Computer vision & XR",
+      "items": [
+        "TensorFlow",
+        "OpenCV",
+        "HoloLens",
+        "VR"
+      ]
+    },
+    {
+      "name_ko": "개발 · 협업 도구",
+      "name_en": "Development & collaboration",
+      "items": [
+        "Git",
+        "Jira",
+        "Confluence",
+        "Jenkins"
+      ]
+    },
+    {
+      "name_ko": "제작 · 문서 도구",
+      "name_en": "Production & documentation",
+      "items": [
+        "Blender",
+        "Excel",
+        "PowerPoint",
+        "Word",
+        "한글 / Hancom HWP"
+      ]
+    },
+    {
+      "name_ko": "기초 사용 경험",
+      "name_en": "Foundational experience",
+      "items": [
+        "C",
+        "C++",
+        "Unreal Engine"
+      ]
+    }
+  ]
 }
