@@ -15,6 +15,7 @@
 /* Complete technology inventory and original album artwork. */
 .technology-section{display:grid;grid-template-columns:.85fr 1.4fr;gap:94px;padding-bottom:70px}
 .technology-section .eyebrow{margin-bottom:12px}.technology-section h2{font-size:30px}
+.ai-experience{margin-top:28px;max-width:380px}.ai-experience h3{font-size:16px;margin-bottom:12px}.ai-experience p{font-size:14px;line-height:1.9;color:var(--muted)}
 .technology-list{margin:0}.technology-list>div{display:grid;grid-template-columns:140px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--line)}
 .technology-list>div:first-child{padding-top:0}.technology-list dt{font-size:12px;font-weight:650}.technology-list dd{margin:0;font-size:13px;line-height:1.9;color:var(--muted)}
 .music-section{padding-block:78px}.music-heading{display:grid;grid-template-columns:1fr 1.45fr;gap:50px;margin-bottom:40px;align-items:start}.music-heading .eyebrow{margin-bottom:12px}.music-heading>div>p:not(.eyebrow){font-size:14px;color:var(--muted);line-height:2}

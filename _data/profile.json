@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-09-23.5",
+  "revision": "2026-09-23.6",
   "identity": {
     "name_ko": "박태준",
     "name_en": "Taejoon Park",
@@ -8,7 +8,8 @@
     "role_ko": "MoEater 대표 · 게임 개발자",
     "role_en": "Game developer leading MoEater",
     "team_size": 3,
-    "development_since": "2022-01"
+    "development_since": "2022-01",
+    "experience_basis": "회사 재직과 독립 개발 포함. 회사별 재직기간 합계와 구분함."
   },
   "links": {
     "website": "https://rekorn.com/",
@@ -198,6 +199,7 @@
     "Python",
     "TypeScript",
     "React",
+    "XML",
     "WebRTC",
     "WebView2",
     "Friflo.Engine.ECS",
@@ -205,10 +207,14 @@
     "OpenCV",
     "HoloLens",
     "VR",
+    "Codex",
+    "Claude Code",
+    "Jev (TypeSafe)",
     "Git",
     "Jira",
     "Confluence",
     "Jenkins",
+    "Android Studio",
     "Blender",
     "Excel",
     "PowerPoint",
@@ -218,6 +224,30 @@
     "C++",
     "Unreal Engine"
   ],
+  "verification": {
+    "checked_at": "2026-09-23",
+    "career_source": "https://rekorn.notion.site/680da9550ce64575b7f0cc6bd4ba0f0c",
+    "moeater_start_source": "Existing user Remember profile; this is role tenure, not founding or project start date.",
+    "continuous_experience_source": "User confirmation on 2026-09-23.",
+    "limitations": [
+      "No verified revenue or download counts included.",
+      "Company employment and continuous development experience are different measures.",
+      "EULA Demo is not a second paid full release.",
+      "No claim that every PR check passed.",
+      "Do not infer founder, company legal status or committed team staffing from representative role."
+    ],
+    "skills_sources": [
+      "Notion skills list and portfolio, existing Gamejob resume, saved Wishket/Remember/LinkedIn fields.",
+      "GynoFactory source and reviewed Git evidence confirm Godot, Stride, React/TypeScript and WebView2; dependency inclusion alone is not treated as expertise.",
+      "Friflo.Engine.ECS merged contribution. C, C++ and Unreal Engine retain the user-recorded foundational level.",
+      "Existing Kmong profile: Android Studio and XML; user statement and GynoFactory evidence: Codex, Claude Code, Jev."
+    ],
+    "music_notes": [
+      "Four official Bandcamp releases verified. Credits distinguish producer/arranger/composer from compilation participation.",
+      "Motto Yukari release date conflicts: Bandcamp says 2017-08-11, self portfolio says M3-2017 autumn. Public display uses 2017 only. No unverified largest-event claim propagated."
+    ],
+    "early_projects_source": "Public Notion portfolio. Albida Soft app count is the user’s own historical record; no current download/review counts propagated."
+  },
   "languages": [
     {
       "name_ko": "한국어",
@@ -505,7 +535,8 @@
         "Java",
         "Python",
         "TypeScript",
-        "React"
+        "React",
+        "XML"
       ]
     },
     {
@@ -528,13 +559,23 @@
       ]
     },
     {
+      "name_ko": "AI 개발 도구",
+      "name_en": "AI development",
+      "items": [
+        "Codex",
+        "Claude Code",
+        "Jev (TypeSafe)"
+      ]
+    },
+    {
       "name_ko": "개발 · 협업 도구",
       "name_en": "Development & collaboration",
       "items": [
         "Git",
         "Jira",
         "Confluence",
-        "Jenkins"
+        "Jenkins",
+        "Android Studio"
       ]
     },
     {
@@ -557,5 +598,22 @@
         "Unreal Engine"
       ]
     }
-  ]
+  ],
+  "ai_development": {
+    "title_ko": "AI 개발 환경 구축",
+    "title_en": "AI development environments",
+    "summary_ko": "Claude Code를 초기 공개부터 개발에 사용해 왔습니다. Codex와 Claude Code를 활용한 프로젝트별 개발 환경을 구축하고, 코드 검토에 Jev를 연동해 운영하고 있습니다.",
+    "summary_en": "I have used Claude Code since its initial release. I build project-specific development environments around Codex and Claude Code, with Jev integrated into code review.",
+    "tools": [
+      "Codex",
+      "Claude Code",
+      "Jev (TypeSafe)"
+    ],
+    "claude_code_since": "2025-02",
+    "experience_source": "User confirmation, 2026-09-23; GynoFactory repository reviewed read-only.",
+    "tool_references": [
+      "https://www.anthropic.com/news/claude-3-7-sonnet",
+      "https://docs.typesafe.ai/introduction"
+    ]
+  }
 }
