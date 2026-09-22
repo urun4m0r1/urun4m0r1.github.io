@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "revision": "2026-09-23.2",
+  "identity": {
+    "name_ko": "박태준",
+    "name_en": "Taejoon Park",
+    "alias": "Rekorn",
+    "role_ko": "MoEater 대표 · 게임 개발자",
+    "role_en": "Game developer leading MoEater",
+    "team_size": 3,
+    "development_since": "2022-01"
+  },
+  "links": {
+    "website": "https://rekorn.com/",
+    "studio": "https://moeater.com/",
+    "github": "https://github.com/urun4m0r1",
+    "linkedin": "https://www.linkedin.com/in/rekorn/",
+    "wishket": "https://www.wishket.com/partners/p/urun4m0r1/",
+    "kmong": "https://kmong.com/@%EB%A0%88%EC%BD%98",
+    "rocketpunch": "https://www.rocketpunch.com/@urun4m0r1",
+    "notion_bio": "https://rekorn.notion.site/680da9550ce64575b7f0cc6bd4ba0f0c",
+    "notion_portfolio": "https://rekorn.notion.site/d80b4601deba46008005275379aa6357"
+  },
+  "book": {
+    "title": "한 권으로 배우는 게임 프로그래밍",
+    "publisher": "한빛미디어",
+    "published": "2024-10-28",
+    "role_ko": "제1저자(공저)",
+    "role_en": "First-listed co-author",
+    "authors": [
+      "박태준",
+      "박효재",
+      "윤하연"
+    ],
+    "isbn": "9791169213035",
+    "url": "https://www.yes24.com/product/goods/135854770",
+    "image": "https://image.yes24.com/goods/135854770/XL"
+  },
+  "careers": [
+    {
+      "company_ko": "MoEater",
+      "company_en": "MoEater",
+      "start": "2026-05",
+      "end": null,
+      "role_ko": "대표",
+      "role_en": "Studio Head",
+      "work_ko": "3인 게임 개발팀 운영. EULA PD·프로그래밍.",
+      "work_en": "Lead a three-person game development team. PD and programming for EULA."
+    },
+    {
+      "company_ko": "미소게",
+      "company_en": "Misoge",
+      "start": "2024-09",
+      "end": "2025-06",
+      "role_ko": "기술이사",
+      "role_en": "Chief Technology Officer",
+      "work_ko": "4인 협동 게임 EGG RAIDERS 개발 총괄.",
+      "work_en": "Led development of EGG RAIDERS, a four-player co-op game."
+    },
+    {
+      "company_ko": "씨에스에스",
+      "company_en": "CSS",
+      "start": "2023-08",
+      "end": "2024-07",
+      "role_ko": "일반게임팀 프로그래머",
+      "role_en": "Game Programmer",
+      "work_ko": "HAN:A 기획·개발 주도.",
+      "work_en": "Led planning and development of HAN:A."
+    },
+    {
+      "company_ko": "컴투버스",
+      "company_en": "Com2Verse",
+      "start": "2022-04",
+      "end": "2023-08",
+      "role_ko": "클라이언트 개발자",
+      "role_en": "Client Developer",
+      "work_ko": "Unity PC 클라이언트, 씬 구조·로깅 시스템과 WebRTC 기능 개발.",
+      "work_en": "Developed a Unity PC client, scene structure, logging and WebRTC features."
+    },
+    {
+      "company_ko": "컴투스",
+      "company_en": "Com2us",
+      "start": "2022-01",
+      "end": "2022-03",
+      "role_ko": "ECO 클라이언트팀 개발자",
+      "role_en": "Client Developer, ECO",
+      "work_ko": "공채 온보딩과 중앙 조직 클라이언트 업무 지원.",
+      "work_en": "Completed graduate onboarding and supported the central client team."
+    }
+  ],
+  "education": [
+    {
+      "school_ko": "쓰쿠바대학",
+      "school_en": "University of Tsukuba",
+      "start": "2016-04",
+      "end": "2020-03",
+      "degree_ko": "공학시스템학류 학사",
+      "degree_en": "Bachelor's degree, Engineering Systems"
+    },
+    {
+      "school_ko": "한국디지털미디어고등학교",
+      "school_en": "Korea Digital Media High School",
+      "start": "2012-03",
+      "end": "2015-02",
+      "degree_ko": "해킹방어과 졸업",
+      "degree_en": "Hacking Defense"
+    }
+  ],
+  "works": [
+    {
+      "id": "eula",
+      "title": "EULA ~2026 Human Creativity Report~",
+      "released": "2026-07-10",
+      "status_ko": "Steam 정식 출시",
+      "status_en": "Released on Steam",
+      "role_ko": "PD · 프로그래밍",
+      "role_en": "PD & Programming",
+      "summary_ko": "AI와 창작을 둘러싼 선택을 다룬 비주얼 노벨.",
+      "summary_en": "A visual novel about choices surrounding AI and creative work.",
+      "url": "https://store.steampowered.com/app/4517370/EULA/",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4517370/951e37ebf8a0493811054b64c3dee6865f2b6258/capsule_616x353.jpg"
+    },
+    {
+      "id": "egg-raiders",
+      "title": "EGG RAIDERS",
+      "released": "2024-10-30",
+      "status_ko": "Steam 얼리 액세스",
+      "status_en": "Steam Early Access",
+      "role_ko": "개발 총괄 · 미소게 기술이사",
+      "role_en": "Development Lead · CTO at Misoge",
+      "summary_ko": "동료와 함께 탐색하고 탈출하는 4인 협동 생존 호러 게임.",
+      "summary_en": "A four-player co-op survival horror game about exploring and escaping together.",
+      "url": "https://store.steampowered.com/app/3253440/EGG_RAIDERS/",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3253440/2e227fdeee01d38d92ea46d4b379e8e6303ebc62/capsule_616x353.jpg"
+    },
+    {
+      "id": "eula-demo",
+      "title": "EULA Demo ~하트 콩닥 미술부~",
+      "released": "2026-04-30",
+      "status_ko": "별도 이야기의 무료 데모",
+      "status_en": "Free demo with a separate story",
+      "role_ko": "MoEater 작품",
+      "role_en": "A MoEater title",
+      "summary_ko": "게임 출시를 앞둔 제작자의 선택을 다룬 짧은 비주얼 노벨. EULA 본편과 다른 이야기를 담았습니다.",
+      "summary_en": "A short visual novel about a creator preparing to release a game, with a story distinct from the full EULA release.",
+      "url": "https://store.steampowered.com/app/4664420/EULA_Demo_HeartDokidoki_Art_Club/",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4664420/026f5ad1d17b86ad7eab8a0d3a5a2c69ea4df954/capsule_616x353.jpg"
+    },
+    {
+      "id": "gynofactory",
+      "title": "GynoFactory",
+      "released": null,
+      "status_ko": "개발 중",
+      "status_en": "In development",
+      "role_ko": "MoEater · 게임 개발",
+      "role_en": "MoEater · Game development",
+      "summary_ko": "생산 라인을 설계하고 확장하는 공장 자동화 게임.",
+      "summary_en": "A factory automation game about designing and expanding production lines.",
+      "url": "https://moeater.com/"
+    },
+    {
+      "id": "rekorntools",
+      "title": "RekornTools.Avatar",
+      "released": null,
+      "status_ko": "BOOTH 판매",
+      "status_en": "Sold on BOOTH",
+      "role_ko": "제작 · 판매",
+      "role_en": "Creator",
+      "summary_ko": "VRChat 아바타 제작을 돕는 Unity 에디터 도구.",
+      "summary_en": "Unity editor tools for building VRChat avatars.",
+      "url": "https://booth.pm/ja/items/3860932"
+    }
+  ],
+  "research": {
+    "title": "MRHMDを用いたコンクリート壁面のインタラクティブひび割れ検査システムの開発",
+    "venue": "일본 전기학회(IEEJ) 2020 전국대회",
+    "role_ko": "공저",
+    "role_en": "Co-author",
+    "paper_number": "3-040",
+    "url": "https://gakkai-web.net/iee/program/2020/data/html/general/general5.html"
+  },
+  "open_source": {
+    "repository": "Friflo.Engine.ECS",
+    "pr": 126,
+    "merged": "2026-04-13",
+    "summary_ko": "관계 데이터를 읽을 때 불필요한 컴포넌트가 생기던 버그를 수정하고 회귀 테스트 3개를 추가했습니다. 유지관리자가 병합한 기여입니다.",
+    "summary_en": "Fixed a relation deserialization bug that created a phantom component and added three regression tests. Merged by the maintainer.",
+    "url": "https://github.com/friflo/Friflo.Engine.ECS/pull/126"
+  },
+  "skills": [
+    "C#",
+    "Unity",
+    ".NET",
+    "Git",
+    "Python",
+    "TypeScript",
+    "React",
+    "WebRTC",
+    "Godot",
+    "Stride"
+  ],
+  "languages": [
+    {
+      "name_ko": "한국어",
+      "name_en": "Korean",
+      "level_ko": "모국어",
+      "level_en": "Native"
+    },
+    {
+      "name_ko": "일본어",
+      "name_en": "Japanese",
+      "level_ko": "업무상 소통 가능 · 일본 대학 졸업",
+      "level_en": "Professional communication · university education in Japan"
+    },
+    {
+      "name_ko": "영어",
+      "name_en": "English",
+      "level_ko": "업무상 소통 가능",
+      "level_en": "Professional communication"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "정보처리기능사",
+      "date": "2009-02",
+      "issuer": "한국산업인력공단",
+      "name_en": "Craftsman Information Processing",
+      "issuer_en": "Human Resources Development Service of Korea"
+    },
+    {
+      "name": "정보기기운용기능사",
+      "date": "2011-02",
+      "issuer": "한국산업인력공단",
+      "name_en": "Craftsman Information Equipment Operation",
+      "issuer_en": "Human Resources Development Service of Korea"
+    },
+    {
+      "name": "워드프로세서 1급",
+      "date": "2011-05",
+      "issuer": "대한상공회의소",
+      "name_en": "Word Processor, Level 1",
+      "issuer_en": "Korea Chamber of Commerce and Industry"
+    },
+    {
+      "name": "컴퓨터활용능력 2급",
+      "date": "2010-04",
+      "issuer": "대한상공회의소",
+      "name_en": "Computer Specialist in Spreadsheet & Database, Level 2",
+      "issuer_en": "Korea Chamber of Commerce and Industry"
+    },
+    {
+      "name": "ITQ 한글엑셀 A",
+      "date": "2010-08",
+      "issuer": "한국생산성본부",
+      "name_en": "ITQ Hangul Excel, Grade A",
+      "issuer_en": "Korea Productivity Center"
+    },
+    {
+      "name": "ITQ 한글파워포인트 A",
+      "date": "2010-03",
+      "issuer": "한국생산성본부",
+      "name_en": "ITQ Hangul PowerPoint, Grade A",
+      "issuer_en": "Korea Productivity Center"
+    },
+    {
+      "name": "JLPT N2",
+      "date": "2015-07",
+      "issuer": "JEES",
+      "name_en": "JLPT N2",
+      "issuer_en": "JEES"
+    },
+    {
+      "name": "TOEIC 920",
+      "date": "2019-06",
+      "issuer": "IIBC",
+      "note": "2019년 응시 기록",
+      "name_en": "TOEIC 920",
+      "issuer_en": "IIBC"
+    }
+  ],
+  "awards": [
+    {
+      "name": "8월 모범 카투사",
+      "award": "수상",
+      "issuer": "한국군지원단",
+      "date": "2021-09",
+      "name_en": "Model KATUSA for August",
+      "award_en": "Recognition",
+      "issuer_en": "ROK Army Support Group"
+    },
+    {
+      "name": "안양사이버과학축제 전국학생 지능형 로봇대회",
+      "award": "3등",
+      "issuer": "안양시청",
+      "date": "2013-06",
+      "name_en": "Anyang Cyber Science Festival Student Intelligent Robot Competition",
+      "award_en": "Third prize",
+      "issuer_en": "Anyang City"
+    },
+    {
+      "name": "SK 앱 개발 페스티벌",
+      "award": "장려상",
+      "issuer": "SK플래닛",
+      "date": "2013-04",
+      "name_en": "SK App Development Festival",
+      "award_en": "Encouragement award",
+      "issuer_en": "SK Planet"
+    },
+    {
+      "name": "학생 과학 발명품 경진대회",
+      "award": "은상",
+      "issuer": "인천광역시",
+      "date": "2010-05",
+      "name_en": "Student Science Invention Competition",
+      "award_en": "Silver prize",
+      "issuer_en": "Incheon Metropolitan City"
+    }
+  ],
+  "additional_projects": [
+    {
+      "title": "TSF Support",
+      "summary_ko": "웹소설 작성용 문장 강조 VS Code 확장. Marketplace에 배포했습니다.",
+      "summary_en": "A VS Code extension that highlights sentence elements for web fiction writers, distributed on the Marketplace.",
+      "url": "https://marketplace.visualstudio.com/items?itemName=rekorn.tsf-support"
+    },
+    {
+      "title": "LinearBeats",
+      "summary_ko": "키보드 전체를 사용하는 Unity 리듬게임과 차트 제작 도구.",
+      "summary_en": "A Unity rhythm game and chart editor using the full keyboard.",
+      "url": "https://github.com/urun4m0r1/LinearBeats"
+    },
+    {
+      "title": "CrackManager",
+      "summary_ko": "MR HMD 콘크리트 균열 검사 연구의 공개 C# 코드.",
+      "summary_en": "Public C# code from the mixed reality concrete crack inspection research.",
+      "url": "https://github.com/urun4m0r1/CrackManager"
+    }
+  ],
+  "music": {
+    "years": "2016–2019",
+    "roles": [
+      "DJ",
+      "Producer",
+      "VJ"
+    ],
+    "label": "Neodymium Pudding",
+    "release": "Divergence: Expansion",
+    "track": "Tropospheric Invasion",
+    "release_date": "2018-10-28",
+    "url": "https://neodymium-pudding.bandcamp.com/album/divergence-expansion",
+    "soundcloud": "https://soundcloud.com/urun4m0r1",
+    "mixcloud": "https://www.mixcloud.com/urun4m0r1"
+  }
+}

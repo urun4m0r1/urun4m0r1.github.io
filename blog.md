@@ -1,9 +1,6 @@
 ---
-layout: blog
-title: Rekorn Sounds
-description: Anisong DJ Guide (KOR)
-sitemap:
-    priority: 1.0
-    lastmod: 2018-06-06
-    changefreq: weekly
+layout: null
+permalink: /blog/
+sitemap: false
 ---
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>DJ 아카이브 | Rekorn</title><meta http-equiv="refresh" content="0;url=/legacy/blog/"><link rel="canonical" href="https://rekorn.com/legacy/blog/"></head><body><a href="/legacy/blog/">DJ 아카이브로 이동</a></body></html>

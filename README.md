@@ -1,6 +1,31 @@
-# Rekorn Sounds
+# Taejoon Park · Rekorn
 
-![Banner](/images/big-banner.jpg)
+Personal portfolio: https://rekorn.com/ · English: https://rekorn.com/en/
+
+- `_data/profile.json`: public facts and source links.
+- `tools/build_portfolio.py`: generates both homepages and sitemap with Python 3.
+- `assets/portfolio`: styles and the owner-provided, unaltered profile photo.
+- `/legacy/`: archived DJ / music site and guides. Old `/works/`, `/blog/` and
+  `/neodymium-pudding/` entry URLs redirect to the archive.
+
+GitHub Pages builds the `master` branch using the existing Jekyll archive pipeline.
+The new homepages are static HTML and CSS, with no runtime JavaScript dependency.
+
+```sh
+python tools/build_portfolio.py
+python -m http.server 8766 --bind 127.0.0.1
+```
+
+The local Python server previews the new homepages. Archive Liquid/Markdown requires
+Jekyll; verify its rendered routes on GitHub Pages after deployment.
+
+Original site checkpoint: `archive/dj-before-portfolio-20260923`, commit `77e6678`.
+To roll back a deployment, revert the portfolio change commit; do not force-push.
+
+Book cover and game capsules link to their official YES24/Steam sources. Their
+copyright remains with the respective rights holders. The portrait is supplied by
+Taejoon Park for his public professional profiles. The record graphic is CSS artwork,
+not a reproduction of an album sleeve.
 
 ## Credits
 ### Original README from HTML5 UP

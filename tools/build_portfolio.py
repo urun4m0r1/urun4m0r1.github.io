@@ -1,0 +1,70 @@
+"""Render public profile data to static Korean and English homepages."""
+import html
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+P = json.loads((ROOT / '_data/profile.json').read_text(encoding='utf-8'))
+E = html.escape
+
+def a(url, label, cls='text-link'):
+    return f'<a class="{cls}" href="{E(url, quote=True)}">{label}<span aria-hidden="true">↗</span></a>'
+
+def render(lang):
+    ko = lang == 'ko'
+    t = lambda kr, en: kr if ko else en
+    key = lambda item, field: E(item[field + '_' + lang])
+    b = P['book']
+    works = []
+    for w in P['works'][:3]:
+        date = w['released'][:7].replace('-', '.')
+        works.append(f'''<article class="work work-{w['id']}">
+          <a class="work-image" href="{E(w['url'])}" aria-label="{E(w['title'])} — Steam"><img src="{E(w['image'])}" alt="{E(w['title'])}" width="616" height="353" loading="lazy"></a>
+          <div class="work-body"><div class="work-meta"><span>{key(w,'status')}</span><span>{date}</span></div>
+          <h3>{E(w['title'])}</h3><p class="role">{key(w,'role')}</p><p>{key(w,'summary')}</p>
+          {a(w['url'],t('Steam에서 보기','View on Steam'))}</div>
+        </article>''')
+    careers = ''.join(f'''<li><time>{c['start'].replace('-','.')} — {(c['end'] or t('현재','Present')).replace('-','.')}</time><div><h3>{key(c,'company')}<span>{key(c,'role')}</span></h3><p>{key(c,'work')}</p></div></li>''' for c in P['careers'])
+    education=''.join(f'<li><span>{c["start"][:4]}–{c["end"][:4]}</span><div><strong>{key(c,"school")}</strong><p>{key(c,"degree")}</p></div></li>' for c in P['education'])
+    certificates=''.join(f'<li><span>{c["date"].replace("-",".")}</span><div><strong>{E(c["name"] if ko else c["name_en"])}</strong><p>{E(c["issuer"] if ko else c["issuer_en"])}{(" · "+t("2019년 응시 기록","Test taken in 2019")) if c.get("note") else ""}</p></div></li>' for c in P['certifications'])
+    awards=''.join(f'<li><span>{c["date"].replace("-",".")}</span><div><strong>{E(c["name"] if ko else c["name_en"])} · {E(c["award"] if ko else c["award_en"])}</strong><p>{E(c["issuer"] if ko else c["issuer_en"])}</p></div></li>' for c in P['awards'])
+    projects=''.join(f'<li><h3>{E(c["title"])}</h3><p>{key(c,"summary")}</p>{a(c["url"],t("프로젝트 보기","View project"))}</li>' for c in P['additional_projects'])
+    languages=''.join(f'<li><strong>{key(c,"name")}</strong><span>{key(c,"level")}</span></li>' for c in P['languages'])
+    title = t('박태준 | 게임 개발자 · 저자 · MoEater 대표', 'Taejoon Park | Game Developer & Author')
+    desc = t('한빛미디어 게임 프로그래밍 책 제1저자(공저), 전 컴투스·컴투버스 개발자. EULA, EGG RAIDERS와 개발 작업을 소개합니다.', 'Game developer leading MoEater, former Com2us and Com2Verse developer, and first-listed co-author of a game programming book published by Hanbit Media.')
+    canonical = 'https://rekorn.com/' + ('' if ko else 'en/')
+    jsonld = {'@context':'https://schema.org','@type':'Person','name':'박태준','alternateName':['Taejoon Park','Rekorn'],'url':'https://rekorn.com/','jobTitle':'Game Developer','sameAs':[P['links']['github'],P['links']['linkedin'],P['links']['studio']], 'alumniOf':{'@type':'CollegeOrUniversity','name':'University of Tsukuba'}}
+    return f'''<!doctype html>
+<html lang="{lang}"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title}</title><meta name="description" content="{desc}">
+<link rel="canonical" href="{canonical}"><link rel="alternate" hreflang="ko" href="https://rekorn.com/"><link rel="alternate" hreflang="en" href="https://rekorn.com/en/"><link rel="alternate" hreflang="x-default" href="https://rekorn.com/">
+<meta property="og:type" content="website"><meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="https://rekorn.com/assets/portfolio/taejoon-park.png"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#f4f1e9">
+<link rel="icon" href="/assets/portfolio/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/portfolio/site.css">
+<script type="application/ld+json">{json.dumps(jsonld,ensure_ascii=False)}</script>
+</head><body>
+<a class="skip" href="#main">{t('본문 바로가기','Skip to content')}</a>
+<header class="site-header wrap"><a class="wordmark" href="{t('/','/en/')}">REKORN<span class="dot">.</span></a><nav aria-label="{t('주 메뉴','Main navigation')}"><a href="#work">{t('작품','Work')}</a><a href="#about">{t('이력','About')}</a><a href="#contact">{t('개발 문의','Contact')}</a><a class="lang" href="{t('/en/','/')}" lang="{t('en','ko')}">{t('EN','한국어')}</a></nav></header>
+<main id="main">
+<section class="hero wrap" aria-labelledby="name"><div class="hero-copy"><p class="eyebrow">GAME DEVELOPER · AUTHOR · MOEATER</p><h1 id="name">{t('박태준','Taejoon<br>Park')}<span>Rekorn</span></h1><p class="hero-lead">{t('게임을 개발하고,<br>게임 개발에 관한 책을 썼습니다.','I develop games.<br>I also wrote a book about making them.')}</p><p class="hero-detail">{t('『한 권으로 배우는 게임 프로그래밍』 제1저자(공저).<br>컴투스·컴투버스를 거쳐, 지금은 MoEater를 이끌고 있습니다.','First-listed co-author of a game programming book from Hanbit Media.<br>Formerly at Com2us and Com2Verse. Now leading MoEater.')}</p><div class="hero-actions"><a class="button" href="#contact">{t('개발 의뢰하기','Discuss a project')}<span aria-hidden="true">↗</span></a><a class="quiet-link" href="#work">{t('만든 것들 보기','Explore my work')}<span aria-hidden="true">↓</span></a></div></div>
+<figure class="portrait"><img src="/assets/portfolio/taejoon-park.png" alt="{t('박태준','Taejoon Park')}" width="1071" height="1145" fetchpriority="high"><figcaption><span>TAEJOON PARK</span><span>SOUTH KOREA</span></figcaption></figure></section>
+<div class="credentials wrap"><span>{t('전 컴투스 · 컴투버스','Former Com2us · Com2Verse')}</span><span>{t('쓰쿠바대학 공학 학사','University of Tsukuba')}</span><span>{t('일본 전기학회 IEEJ 논문 공저','IEEJ 2020 paper co-author')}</span></div>
+<section class="book-section wrap" id="book"><a class="book-display" href="{b['url']}" aria-label="{t('저서 상세 보기','View the book')}"><span class="book-label">HANBIT MEDIA / 2024</span><img src="{b['image']}" alt="{E(b['title'])} 책 표지" width="300" height="390" loading="lazy"></a><div class="book-copy"><p class="eyebrow">PUBLISHED AUTHOR</p><h2>{t('한 권으로 배우는<br>게임 프로그래밍','A book about<br>game programming')}</h2><p class="book-byline">{t('제1저자(공저) · 박태준, 박효재, 윤하연','First-listed co-author · Taejoon Park, Hyojae Park & Hayeon Yoon')}</p><p>{t('수학과 물리, 자료구조와 알고리즘, 디자인 패턴.<br>게임을 만드는 데 필요한 기초 지식을 한 권에 담았습니다.','Math, physics, data structures, algorithms and design patterns.<br>A practical foundation for building games, published in Korean.')}</p><dl class="book-data"><div><dt>{t('출판사','Publisher')}</dt><dd>{t('한빛미디어','Hanbit Media')}</dd></div><div><dt>{t('출간일','Published')}</dt><dd>2024.10.28</dd></div><div><dt>ISBN</dt><dd>9791169213035</dd></div></dl>{a(b['url'],t('서점에서 책 보기','View the book'))}</div></section>
+<section class="section wrap" id="work"><div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2>{t('출시한 게임','Released games')}</h2></div><p>{t('작품과 그 안에서 맡은 일.','The games, and my part in making them.')}</p></div><div class="work-grid">{''.join(works)}</div>
+<div class="work-notes"><article><span class="index">IN DEVELOPMENT</span><h3>GynoFactory</h3><p>{key(P['works'][3],'summary')}</p>{a(P['links']['studio'],t('MoEater 팀 소개','Meet MoEater'))}</article><article><span class="index">UNITY EDITOR TOOL</span><h3>RekornTools.Avatar</h3><p>{key(P['works'][4],'summary')}</p>{a(P['works'][4]['url'],t('BOOTH 판매 페이지','View on BOOTH'))}</article></div></section>
+<section class="evidence-section"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">RESEARCH & OPEN SOURCE</p><h2>{t('연구와 오픈소스 기여','Research & open source')}</h2></div></div><div class="evidence-grid"><article><span class="index">IEEJ NATIONAL CONVENTION / 2020</span><h3>{t('HoloLens를 활용한<br>콘크리트 균열 검사','Concrete crack inspection<br>with HoloLens')}</h3><p>{t('쓰쿠바대학에서 MR HMD를 활용한 검사 시스템을 연구했습니다. 일본 전기학회(IEEJ) 2020 전국대회 논문에 공동 저자로 참여했습니다.','Researched an interactive inspection system using a mixed reality headset at the University of Tsukuba. Co-authored a paper for the IEEJ National Convention in 2020.')}</p><details><summary>{t('논문 제목과 공개 코드','Paper title and code')}</summary><p lang="ja">{E(P['research']['title'])}</p><p>3-040 · IEEJ 2020</p>{a('https://github.com/urun4m0r1/CrackManager','CrackManager / C#')}</details>{a(P['research']['url'],t('학회 발표 기록','Conference record'))}</article><article class="code-contribution"><span class="index">MERGED / APR 13, 2026</span><h3>Friflo.Engine.ECS</h3><p>{key(P['open_source'],'summary')}</p><div class="code-result"><span>IRelation</span><span aria-hidden="true">→</span><span>{t('역직렬화 수정','Serialization fix')}</span><small>3 {t('회귀 테스트','regression tests')}</small></div>{a(P['open_source']['url'],t('병합된 PR #126','Merged PR #126'))}</article></div><div class="project-index"><h3>{t('더 만든 것들','More projects')}</h3><ul>{projects}</ul></div></div></section>
+<section class="section wrap about" id="about"><div class="about-intro"><p class="eyebrow">ABOUT</p><h2>{t('개발 이력','Experience')}</h2><p>{t('2022년 첫 입사 이후 회사 재직과 독립 게임 개발을 이어왔습니다. 현재는 3인 팀 MoEater의 대표로 게임을 만들고 있습니다.','I have worked in development since 2022, through studio roles and independent projects. Today I lead MoEater, a three-person game development team.')}</p><div class="skills">{''.join(f'<span>{E(s)}</span>' for s in P['skills'][:8])}</div>{a(P['links']['linkedin'],'LinkedIn')}{a(P['links']['github'],'GitHub')}</div><ol class="timeline">{careers}</ol></section>
+<section class="background-section wrap"><div class="background-title"><p class="eyebrow">BACKGROUND</p><h2>{t('학력과 활동','Education & credentials')}</h2></div><div class="background-content"><div class="education-list"><h3>{t('학력','Education')}</h3><ul class="detail-list">{education}</ul><p class="scholarship">{t('한일공동이공계학부유학생 과정 · 일본어 연수 2015–2016','Japan–Korea Joint Government Scholarship program · Japanese language training, 2015–2016')}</p></div><details open><summary>{t('수상','Awards')}<span>04</span></summary><ul class="detail-list">{awards}</ul></details><details><summary>{t('자격 · 어학 시험','Qualifications & language tests')}<span>08</span></summary><ul class="detail-list">{certificates}</ul></details><details><summary>{t('언어','Languages')}<span>03</span></summary><ul class="language-list">{languages}</ul></details></div></section>
+<section class="music-section wrap"><div class="music-title"><p class="eyebrow">ANOTHER SIDE OF REKORN</p><h2>{t('코드 밖에서는,<br>음악을 만들었습니다.','Beyond code,<br>I made music.')}</h2><p>{t('작곡, DJ, VJ. 일본과 한국에서 공연하고<br>동인 음악 레이블 Neodymium Pudding으로 음반을 냈습니다.','Producer, DJ and VJ. I performed in Japan and Korea<br>and released music with Neodymium Pudding.')}</p>{a('/legacy/',t('이전 사이트와 활동 기록','The original site & activity archive'))}</div><div class="record"><div class="record-art" aria-hidden="true"><div class="record-disc"><span>REKORN<br><small>2018 / NP</small></span></div></div><div class="record-caption"><span>2018.10.28</span><h3>Divergence: Expansion</h3><p>Rekorn — Tropospheric Invasion</p>{a(P['music']['url'],t('Bandcamp에서 듣기','Listen on Bandcamp'))}</div></div></section>
+<section class="contact-section" id="contact"><div class="wrap contact"><div><p class="eyebrow">LET’S WORK TOGETHER</p><h2>{t('어떤 것을<br>만들고 계신가요?','What are<br>you building?')}</h2></div><div class="contact-copy"><p>{t('게임 개발, Unity/C# 프로젝트의 오류 수정,<br>반복 작업을 줄이는 제작 도구를 의뢰받습니다.','I take on game development, Unity/C# bug fixes,<br>and tools that cut down repetitive work.')}</p><p class="muted">{t('필요한 기능이나 현재 막힌 부분을 보내주세요.<br>내용을 확인하고 작업 범위와 견적을 안내드립니다.','Send the feature you need or the issue you are facing.<br>I will review the scope and provide a quote.')}</p><div class="contact-links">{a(P['links']['wishket'],t('위시켓에서 문의','Contact on Wishket'),'button light')}{a(P['links']['linkedin'],'LinkedIn','button outline')}</div><a class="email" href="mailto:urun4m0r1@gmail.com">urun4m0r1@gmail.com ↗</a></div></div></section>
+</main><footer class="wrap footer"><span>© 2026 Taejoon Park · Rekorn</span><div>{a('/legacy/',t('이전 사이트 · 음악 아카이브','Legacy · music archive'))}{a(P['links']['studio'],'MoEater')}{a(P['links']['github'],'GitHub')}</div></footer>
+</body></html>
+'''
+
+for language, path in [('ko', ROOT/'index.html'),('en', ROOT/'en/index.html')]:
+    path.parent.mkdir(parents=True,exist_ok=True)
+    path.write_text(render(language),encoding='utf-8',newline='\n')
+print('Rendered Korean and English portfolio from revision',P['revision'])
+paths=['/','/en/','/legacy/','/legacy/works/','/legacy/neodymium-pudding/','/legacy/blog/','/legacy/blog/dj-intro-01/','/legacy/blog/dj-intro-02/','/legacy/blog/dj-intro-03/']
+sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>https://rekorn.com{p}</loc></url>\n' for p in paths)+'</urlset>\n'
+(ROOT/'sitemap.xml').write_text(sitemap,encoding='utf-8',newline='\n')
