@@ -24,8 +24,8 @@ To roll back a deployment, revert the portfolio change commit; do not force-push
 
 Book cover and game capsules link to their official YES24/Steam sources. Their
 copyright remains with the respective rights holders. The portrait is supplied by
-Taejoon Park for his public professional profiles. The record graphic is CSS artwork,
-not a reproduction of an album sleeve.
+Taejoon Park for his public professional profiles. The four album sleeves are original release artwork; illustrator credits appear
+alongside each record.
 
 ## Credits
 ### Original README from HTML5 UP
