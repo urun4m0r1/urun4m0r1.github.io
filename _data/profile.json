@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-09-24.1",
+  "revision": "2026-09-24.3",
   "identity": {
     "name_ko": "박태준",
     "name_en": "Taejoon Park",
@@ -53,7 +53,7 @@
     {
       "company_ko": "MoEater",
       "company_en": "MoEater",
-      "start": "2026-05",
+      "start": "2025-06",
       "end": null,
       "role_ko": "대표",
       "role_en": "Studio Head",
@@ -385,8 +385,8 @@
   "additional_projects": [
     {
       "title": "BOOTH NOW",
-      "summary_ko": "BOOTH NOW의 프론트엔드·UI/UX를 담당하고 있습니다. 상품 2만 5천여 개와 브랜드 3,800여 곳을 모아 보여주며 한국어·일본어·영어를 지원하는 VRChat 아바타 에셋 서비스입니다. 2026년 9월 팀에 합류해 React 프론트엔드와 PC·모바일 반응형 UI를 개편했습니다. 서비스 규모는 2026년 9월 기준입니다.",
-      "summary_en": "I joined BOOTH NOW in September 2026 as the team member responsible for frontend development and UI/UX. The VRChat avatar asset discovery service covers over 25,000 products and 3,800 brands in Korean, Japanese and English. My work includes React frontend development and a responsive UI redesign for desktop and mobile. Catalog figures are as of September 2026.",
+      "summary_ko": "BOOTH NOW는 VRChat 아바타 의상과 헤어를 찾는 서비스입니다. 2026년 9월 집계에서 28일간 57개국의 방문자 6,810명을 기록했으며, 공식 X 계정의 팔로워는 9천여 명입니다. 2026년 9월 팀에 정식 합류해 프론트엔드와 UI/UX를 담당하며, React 기반 PC·모바일 UI 개편을 구현했습니다.",
+      "summary_en": "BOOTH NOW helps VRChat users find avatar clothing and hair. September 2026 figures show 6,810 visitors from 57 countries over 28 days, with over 9,000 followers on the official X account. I joined the team in September 2026 and am responsible for frontend development and UI/UX, including the React interface redesign for desktop and mobile.",
       "url": "https://booth-now.com/",
       "technologies": [
         "React",
