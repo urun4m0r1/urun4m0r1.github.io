@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-09-23.6",
+  "revision": "2026-09-24.1",
   "identity": {
     "name_ko": "박태준",
     "name_en": "Taejoon Park",
@@ -20,7 +20,8 @@
     "kmong": "https://kmong.com/@%EB%A0%88%EC%BD%98",
     "rocketpunch": "https://www.rocketpunch.com/@urun4m0r1",
     "notion_bio": "https://rekorn.notion.site/680da9550ce64575b7f0cc6bd4ba0f0c",
-    "notion_portfolio": "https://rekorn.notion.site/d80b4601deba46008005275379aa6357"
+    "notion_portfolio": "https://rekorn.notion.site/d80b4601deba46008005275379aa6357",
+    "booth_now": "https://booth-now.com/"
   },
   "book": {
     "title": "한 권으로 배우는 게임 프로그래밍",
@@ -38,6 +39,17 @@
     "image": "https://image.yes24.com/goods/135854770/XL"
   },
   "careers": [
+    {
+      "company_ko": "BOOTH NOW",
+      "company_en": "BOOTH NOW",
+      "start": "2026-09",
+      "end": null,
+      "role_ko": "프론트엔드 · UI/UX",
+      "role_en": "Frontend & UI/UX",
+      "work_ko": "2026년 9월 팀 합류. 프론트엔드 개발과 UI/UX 담당. React 기반 PC·모바일 UI 개편.",
+      "work_en": "Joined the team in September 2026 to own frontend development and UI/UX. Redesigned the React frontend for desktop and mobile.",
+      "url": "https://booth-now.com/"
+    },
     {
       "company_ko": "MoEater",
       "company_en": "MoEater",
@@ -222,7 +234,12 @@
     "한글 / Hancom HWP",
     "C",
     "C++",
-    "Unreal Engine"
+    "Unreal Engine",
+    "JavaScript",
+    "CSS",
+    "Vite",
+    "React Router",
+    "Lucide React"
   ],
   "verification": {
     "checked_at": "2026-09-23",
@@ -366,6 +383,23 @@
     }
   ],
   "additional_projects": [
+    {
+      "title": "BOOTH NOW",
+      "summary_ko": "BOOTH NOW의 프론트엔드·UI/UX를 담당하고 있습니다. 상품 2만 5천여 개와 브랜드 3,800여 곳을 모아 보여주며 한국어·일본어·영어를 지원하는 VRChat 아바타 에셋 서비스입니다. 2026년 9월 팀에 합류해 React 프론트엔드와 PC·모바일 반응형 UI를 개편했습니다. 서비스 규모는 2026년 9월 기준입니다.",
+      "summary_en": "I joined BOOTH NOW in September 2026 as the team member responsible for frontend development and UI/UX. The VRChat avatar asset discovery service covers over 25,000 products and 3,800 brands in Korean, Japanese and English. My work includes React frontend development and a responsive UI redesign for desktop and mobile. Catalog figures are as of September 2026.",
+      "url": "https://booth-now.com/",
+      "technologies": [
+        "React",
+        "JavaScript",
+        "CSS",
+        "Vite",
+        "React Router",
+        "Lucide React"
+      ],
+      "id": "booth-now",
+      "image": "/assets/portfolio/booth-now-desktop.png",
+      "mobile_image": "/assets/portfolio/booth-now-mobile.png"
+    },
     {
       "title": "TSF Support",
       "summary_ko": "웹소설 작성용 문장 강조 VS Code 확장. Marketplace에 배포했습니다.",
@@ -537,6 +571,18 @@
         "TypeScript",
         "React",
         "XML"
+      ]
+    },
+    {
+      "name_ko": "웹 프론트엔드",
+      "name_en": "Web frontend",
+      "items": [
+        "React",
+        "JavaScript",
+        "CSS",
+        "Vite",
+        "React Router",
+        "Lucide React"
       ]
     },
     {
