@@ -1,7 +1,5 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.2.1"
-gem "jekyll-sitemap"
-gem "jekyll-gist"
-gem 'jekyll-feed'
-gem 'jekyll-paginate'
+# Match the managed GitHub Pages environment used for the archived site.
+# Check https://pages.github.com/versions/ before changing this version.
+gem "github-pages", "= 232", group: :jekyll_plugins

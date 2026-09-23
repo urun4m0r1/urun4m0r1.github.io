@@ -19,13 +19,19 @@ python -m http.server 8766 --bind 127.0.0.1
 The local Python server previews the new homepages. Archive Liquid/Markdown requires
 Jekyll; verify its rendered routes on GitHub Pages after deployment.
 
+The archive uses GitHub Pages' managed `github-pages` 232 / Jekyll 3.10 build.
+The Gemfile follows that environment; the obsolete 2017 lockfile was removed because
+the managed build rejected its older dependencies. No local Ruby build was run.
+If local archive editing is needed, install Ruby/Bundler and resolve a fresh lockfile
+before using `bundle exec jekyll serve`. Do not restore the old lockfile.
+
 Original site checkpoint: `archive/dj-before-portfolio-20260923`, commit `77e6678`.
 To roll back a deployment, revert the portfolio change commit; do not force-push.
 
 Book cover and game capsules link to their official YES24/Steam sources. Their
 copyright remains with the respective rights holders. The portrait is supplied by
-Taejoon Park for his public professional profiles. The four album sleeves are original release artwork; illustrator credits appear
-alongside each record.
+Taejoon Park for his public professional profiles. The four album sleeves are
+original release artwork; illustrator credits appear alongside each record.
 
 ## Credits
 ### Original README from HTML5 UP
