@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-09-24.3",
+  "revision": "2026-09-27.1",
   "identity": {
     "name_ko": "박태준",
     "name_en": "Taejoon Park",
@@ -399,6 +399,14 @@
       "id": "booth-now",
       "image": "/assets/portfolio/booth-now-desktop.png",
       "mobile_image": "/assets/portfolio/booth-now-mobile.png"
+    },
+    {
+      "id": "lowpoly-asset-refinement",
+      "title_ko": "3D 에셋 구조 개선 및 텍스처 제작",
+      "title_en": "Low-poly 3D Asset Refinement and Texturing",
+      "date": "2026-09",
+      "summary_ko": "기존 3D 모델의 면 구성과 UV를 정리하고, 비율과 세부 형상을 다듬은 외주 작업입니다. 폴리곤 제한에 맞춰 모델과 텍스처를 완성하고, 편집 가능한 Blender 파일과 수정 근거·전후 비교를 담은 문서를 납품했습니다.",
+      "summary_en": "Refined an existing low-poly asset for a paid client project. Reworked the topology and UV layout, adjusted proportions and details, and created texture maps within the agreed polygon budget. Delivered editable Blender files, texture images, and documentation with before-and-after comparisons and explanations of the changes."
     },
     {
       "title": "TSF Support",

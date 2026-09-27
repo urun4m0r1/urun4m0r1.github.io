@@ -41,7 +41,10 @@ def render(lang):
         if c.get('id')=='booth-now':
             web_work=f'<section class="section wrap web-work" id="project-booth-now"><div class="section-heading"><div><p class="eyebrow">WEB / FRONTEND &amp; UI/UX</p><h2>BOOTH NOW</h2></div>{a(c["url"],t("서비스 보기","Visit the service"))}</div><p class="web-description">{key(c,"summary")}</p>{gallery}</section>'
         else:
-            projects+=f'<li{item_id}><h3>{E(c["title"])}</h3><p>{key(c,"summary")}</p>{a(c["url"],t("프로젝트 보기","View project"))}{gallery}</li>'
+            project_link = a(c['url'],t('프로젝트 보기','View project')) if c.get('url') else ''
+            project_title = c.get('title_'+lang, c.get('title', ''))
+            project_date = f'<span class="project-date">{E(c["date"].replace("-", "."))} · {t("외주","Client work")}</span>' if c.get('date') else ''
+            projects+=f'<li{item_id}><h3>{E(project_title)}{project_date}</h3><p>{key(c,"summary")}</p>{project_link}{gallery}</li>'
     languages=''.join(f'<li><strong>{key(c,"name")}</strong><span>{key(c,"level")}</span></li>' for c in P['languages'])
     skill_groups=''.join(f'<div><dt>{key(g,"name")}</dt><dd>{" · ".join(E(s) for s in g["items"])}</dd></div>' for g in P['skill_groups'])
     ai_intro=f'<div class="ai-experience"><h3>{key(P["ai_development"],"title")}</h3><p>{key(P["ai_development"],"summary")}</p></div>'
